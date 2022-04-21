@@ -1,0 +1,63 @@
+h1,h2,h3 { /* fuente de los títulos */
+    font-family: 'Akshar', sans-serif;
+}
+
+* { /* fuente por defecto de todo el texto */
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: gray; 
+}
+
+footer {
+    padding: 2.5%;
+    background-color: lightgray;
+    text-align: center;
+    color: black;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.1em;
+    display: block;
+    clear: both;
+}
+
+#carátula {
+    position: float;
+    float: right;
+    width: 10%;
+    height: 10%;
+}
+
+figure > img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0px;
+}
+
+#intro {
+    position: float;
+    float: left;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+figcaption {
+    text-align: center;
+    border-style: solid;
+    border-width: 0.1em;
+    border-top-style: none;
+    border-top-width: 0px;
+    padding-top: 0px;
+}
+
+#mail {
+    background-color: lightgrey;
+    color: darkblue;
+}
