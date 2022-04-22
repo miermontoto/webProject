@@ -29,9 +29,17 @@ figure {
     height: inherit;
 }
 
-#intro {
-    position: float;
-    float: left;
+div {
+    display: block;
+    width: 100%;
+}
+
+.sepDiv {
+    visibility: hidden;
+}
+
+hr {
+    clear: both;
 }
 
 p {
@@ -54,12 +62,11 @@ figcaption {
 
 footer {
     padding: 2.5%;
+    margin-top: 1%;
     background-color: lightgray;
     text-align: center;
     color: black;
-    border-color: gray;
-    border-style: solid;
-    border-width: 0.1em;
+    border: gray solid 0.1em;
     display: block;
     clear: both;
 }
