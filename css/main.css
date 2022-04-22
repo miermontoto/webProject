@@ -8,34 +8,25 @@ h1,h2,h3 { /* fuente de los títulos */
     color: black;
 }
 
+/* ------- body ---- */
+
+/* ---- títulos ---- */
 h2 {
     font-size: 1.5em;
     color: gray; 
 }
 
-footer {
-    padding: 2.5%;
-    background-color: lightgray;
-    text-align: center;
-    color: black;
-    border-color: gray;
-    border-style: solid;
-    border-width: 0.1em;
-    display: block;
-    clear: both;
-}
-
-#carátula {
-    position: float;
-    float: right;
-    width: 10%;
-    height: 10%;
-}
-
+/* -- contenido ---- */
 figure > img {
     width: 100%;
     height: 100%;
-    padding-bottom: 0px;
+}
+
+figure {
+    position: float;
+    float: right;
+    width: 10%;
+    height: inherit;
 }
 
 #intro {
@@ -53,11 +44,27 @@ figcaption {
     border-style: solid;
     border-width: 0.1em;
     border-top-style: none;
+
+    /* <- inútil
     border-top-width: 0px;
-    padding-top: 0px;
+    padding-top: 0px;*/
+}
+
+/* ----- footer ---- */
+
+footer {
+    padding: 2.5%;
+    background-color: lightgray;
+    text-align: center;
+    color: black;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.1em;
+    display: block;
+    clear: both;
 }
 
 #mail {
-    background-color: lightgrey;
-    color: darkblue;
+    background-color: inherit;
+    color: blue;
 }
