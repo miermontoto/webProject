@@ -22,111 +22,111 @@
 ### 1.3 Enlaces
 
 - [ ] ReqH11: Enlaces a páginas web externas y a distintos destinos de visualización de esas páginas.
-- [ ] ReqH12: Enlaces a imágenes o vídeos utilizando referencias absolutas a elementos externos.
-- [ ] ReqH13: Enlaces a imágenes o vídeos utilizando referencias relativas a elementos internos.
+- [x] ReqH12: Enlaces a imágenes o vídeos utilizando referencias absolutas a elementos externos.
+- [x] ReqH13: Enlaces a imágenes o vídeos utilizando referencias relativas a elementos internos.
 - [ ] ReqH14: Correo electrónico indicando un asunto.
 - [x] ReqH15: Enlaces a las otras dos páginas del proyecto.
 
 ### 1.4 Imágenes, videos y audios
 
-- [ ] ReqH16
-- [ ] ReqH17
-- [ ] ReqH18
+- [ ] ReqH16: Una imagen dotada de tamaño.
+- [ ] ReqH17: Uun vídeo dotado de tamaño.
+- [ ] ReqH18: Alternativas para evitar fallos en los vídeos (códecs).
 
 ### 1.5 Bloques
 
-- [ ] ReqH19
-- [ ] ReqH20
+- [ ] ReqH19: Varias secciones.
+- [ ] ReqH20: La página se divide utilizando `<div>`.
 
 ### 1.6 Listas y tablas
 
-- [ ] ReqH21
-- [ ] ReqH22
-- [ ] ReqH23
+- [ ] ReqH21: Una lista ordenada.
+- [ ] ReqH22: Una lista no ordenada dentro de una ordenada.
+- [ ] ReqH23: Una tabla, combinando celdas tanto en filas como en columnas.
 
 ## 2. CSS
 
 ### 2.1 Clases e identificadores
 
-- [ ] ReqC1
-- [ ] ReqS2
-- [ ] ReqC3
-- [ ] ReqS4
-- [ ] ReqS5
+- [ ] ReqC1: Crear una clase `IMPORTANTE` para dar formato a algunos textos de tu página web.
+  - [ ] ReqS2: Cuando sea un `<p>`, que su fuente sea Arial. Cuando sea un `<h1>`, que su fuente sea Sans-Serif.
+- [ ] ReqC3: Destacar un título utilizando el identificador `TITULO` con fuente de tamaño 18pt.
+  - [ ] ReqS4: Utilizar otro identificador dándole un formato diferente al títulos `<h1>` con fuente de tamaño 14pt.
+  - [ ] ReqS5: Añadir al texto que tenga el identificador `TITULO` la clase `IMPORTANTE`.
 
 ### 2.2 Selectores
 
-- [ ] ReqC6
-- [ ] ReqC7
-- [ ] ReqC8
-- [ ] ReqS9
-- [ ] ReqC10
+- [ ] ReqC6: Estilo de fuente "normal" en toda la página.
+- [ ] ReqC7: Centrar contenidos de títulos `<h1>` y de la clase `IMPORTANTE`.
+- [ ] ReqC8: Todos los párrafos están identados y un poco opacos.
+- [ ] ReqS9: El texto `<strong>` de un párrafo está subrayado.
+- [ ] ReqC10: Los artículos hijos directos de secciones tienen márgenes y relleno. (margin + padding)
 
 ### 2.3 Pseudoclases
 
-- [ ] ReqC11
-- [ ] ReqC12
-- [ ] ReqC13
-- [ ] ReqC14
+- [ ] ReqC11: Los links cambian de color dependiendo de si han sido visitados o no y de si se arrastra el cursor sobre ellos.
+- [ ] ReqC12: El primer y el último elemento de una lista estarán en negrita, la primera letra con mayúsculas y el resto en minúsculas y con sombra.
+- [ ] ReqC13: La primera letra de los artículos tiene borde, indicando explícitamente su anchura, color y estilo. Los bordes son diferentes dos a dos.
+- [ ] ReqC14: La primera línea de un párrafo está ligeramente en negrita.
 
 ### 2.4 Fondos
 
-- [ ] ReqS15
+- [ ] ReqS15: El cuerpo de la página debe de tener una imagen de fondo.
 
 ### 2.5 Listas
 
-- [ ] ReqC16
-- [ ] ReqC17
-- [ ] ReqS18
+- [ ] ReqC16: Las listas ordenadas tienen viñetas.
+- [ ] ReqC17: Las listas no ordenadas tienen una imagen por viñeta.
+- [ ] ReqS18: Todas las listas tienen posición, sean ordenadas o no.
 
 ### 2.6 Tablas
 
-- [ ] ReqC19
-- [ ] ReqC20
+- [ ] ReqC19: La posición del título de las tablas está indicado explícitamente.
+- [ ] ReqC20: Las celdas de una tabla tienen espacios entre sí.
 
 ### 2.7 Posicionamiento y visualización
 
-- [ ] ReqS21
-- [ ] ReqS22
+- [ ] ReqS21: La página está dividida en bloques y tienen posición.
+- [ ] ReqS22: Existen prioridades en caso de solapamiento. (z-index)
 
 ## 3. JavaScript
 
 ### 3.1 Formulario
 
-- [ ] ReqF1
-- [ ] ReqF2
-- [ ] ReqF3
-- [ ] ReqF4
-- [ ] ReqF5
+- [ ] ReqF1: El formulario tiene nombre.
+- [ ] ReqF2: El formulario no debe comprobarse antes de enviarse.
+- [ ] ReqF3: No deben hacerse sugerencias cuando se esté rellenando.
+- [ ] ReqF4: El resultado del formulario se muestra en una pestaña aparte.
+- [ ] ReqF5: El resultado se envía por correo.
 
 ### 3.2 Elementos del formulario
 
-- [ ] ReqF6
-- [ ] ReqF7
-- [ ] ReqF8
-- [ ] ReqF9
-- [ ] ReqF10
-- [ ] ReqF11
-- [ ] ReqF12
-- [ ] ReqF13
-- [ ] ReqF14
-- [ ] ReqF15
-- [ ] ReqF16
-- [ ] ReqF17
+- [ ] ReqF6: Un panel que contiene:
+  - [ ] ReqF7: Un cuadro de texto.
+  - [ ] ReqF8: Otro cuadro de texto para incluir una contraseña.
+  - [ ] ReqF9: Se puede incluir un teléfono.
+  - [ ] ReqF10: Se puede introducir una URL.
+- [ ] ReqF11: Un bloque de opciones excluyentes. Por defecto se marca una opción.
+- [ ] ReqF12: Un bloque de casillas de verificación. Las opciones del mismo tipo están en un panel.
+- [ ] ReqF13: Un bloque para escoger un color.
+- [ ] ReqF14: Una lista desplegable. Tiene al menos dos grupos, la opción por defecto indica lo que debe seleccionar el usuario.
+- [ ] ReqF15: Existe la posibilidad de subir un archivo.
+- [ ] ReqF16: Existe la posibilidad de escoger una fecha y hora.
+- [ ] ReqF17: Botón de submit y botón de reset.
 
 ### 3.3 Código JS
 
-- [ ] ReqF18
-- [ ] ReqF19
-- [ ] ReqF20
-- [ ] ReqF21
-- [ ] ReqF22
-- [ ] ReqF23
-- [ ] ReqF24
-- [ ] ReqF25
-- [ ] ReqF26
-- [ ] ReqF27
-- [ ] ReqF28
+- [ ] ReqF18: Se modifica el contenido de los elementos HTML en función de los datos introducidos.
+- [ ] ReqF19: Se cambia el estilo de los elementos del formulario en función de si son valores válidos o no.
+- [ ] ReqF20: Se indica alguna ayuda cuando se detecte (mediante js) que un campo no es válido.
+- [ ] ReqJ21: Una función con varios parámetros que sea llamada con diferentes valores de los mismos.
+- [ ] ReqF22: Los dos eventos de foco sobre algún elemento.
+- [ ] ReqF23: Algún evento de teclado.
+  - [ ] ReqJ24: Su función correspondiente.
+- [ ] ReqF25: Algún evento de ratón.
+  - [ ] ReqJ26: Su función correspondiente.
+- [ ] ReqF27: Evento de hacer click en un botón (incluye un botón).
+  - [ ] ReqJ28: Su función correspondiente.
 
 ## 4. Internacionalización
 
@@ -134,29 +134,29 @@
 
 #### 4.1.1 General
 
-- [ ] ReqI1: Indicador de idioma para todo el contenido del fichero HTML
+- [ ] ReqI1: Indicador de idioma para todo el contenido del fichero HTML.
 
 #### 4.1.2 Formateadores
 
-- [ ] ReqI2: Ha de haber un formateador de números decimales
-- [ ] ReqI3: Ha de haber un formateador de moneda
-- [ ] ReqI4: Ha de haber un formateador de fecha corta
-- [ ] ReqI5: Ha de haber un formateador de fecha larga
+- [ ] ReqI2: Un formateador de números decimales.
+- [ ] ReqI3: Un formateador de moneda.
+- [ ] ReqI4: Un formateador de fecha corta.
+- [ ] ReqI5: Un formateador de fecha larga.
 
 #### 4.1.3 Elementos de entrada
 
-- [ ] ReqI6: Varios campos que permitan introducir números
-- [ ] ReqI7: Un campo que permite introducir fechas
+- [ ] ReqI6: Varios campos que permitan introducir números.
+- [ ] ReqI7: Un campo que permite introducir fechas.
 
 #### 4.1.4 Elementos a mostrar
 
-- [ ] ReqI8: Mostrar el resultado de operar varios los campos como otro número
-- [ ] ReqI9: Mostrar el resultado de operar con varios campos como moneda
-- [ ] ReqI10: Mostrar el resultado de operar con varios campos como fecha
+- [ ] ReqI8: Se muestra el resultado de operar varios los campos como otro número.
+- [ ] ReqI9: Se muestra el resultado de operar con varios campos como moneda.
+- [ ] ReqI10: Se muestra el resultado de operar con varios campos como fecha.
 
 #### 4.1.5 Formato
 
-- [ ] ReqI11: Elemento de una clase con formato según el idioma indicado en lang
+- [ ] ReqI11: Elemento de una clase con formato según el idioma indicado en lang.
 
 ### 4.2 Requisitos en I18n.js
 
@@ -164,12 +164,12 @@
 de los componentes asociados según los valores de los elementos en la WEB a los que se
 refieran los IDs
   - Esta marca se repite por cada función.
-  - Se ha de marcar el uso de:
-    - [ ] ReqI13: formateador de números decimales
-    - [ ] ReqI14: formateador de moneda
-    - [ ] ReqI15: formateador de fecha corta
-    - [ ] ReqI16: formateador de fecha larga
+  - Se marca el uso de:
+    - [ ] ReqI13: un formateador de números decimales.
+    - [ ] ReqI14: un formateador de moneda.
+    - [ ] ReqI15: un formateador de fecha corta.
+    - [ ] ReqI16: un formateador de fecha larga.
 
 ### 4.3 Requisitos en fichero CSS
 
-- [ ] ReqI17: Regla que modifique el formato aplicado a una clase dependiendo del idioma
+- [ ] ReqI17: Regla que modifica el formato aplicado a una clase dependiendo del idioma.
