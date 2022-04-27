@@ -22,7 +22,7 @@
 ### 1.3 Enlaces
 
 - [x] ReqH11: Enlaces a páginas web externas y a distintos destinos de visualización de esas páginas.
-  - [ ] Revisar. Ojo con lo de "distintos destinos". 
+  - [ ] Revisar. Ojo con lo de "distintos destinos".
 - [x] ReqH12: Enlaces a imágenes o vídeos utilizando referencias absolutas a elementos externos.
 - [x] ReqH13: Enlaces a imágenes o vídeos utilizando referencias relativas a elementos internos.
 - [x] ReqH14: Correo electrónico indicando un asunto.
@@ -36,8 +36,8 @@
 
 ### 1.5 Bloques
 
-- [ ] ReqH19: Varias secciones.
-- [ ] ReqH20: La página se divide utilizando `<div>`.
+- [x] ReqH19: Varias secciones.
+- [x] ReqH20: La página se divide utilizando `<div>`.
 
 ### 1.6 Listas y tablas
 
@@ -49,16 +49,16 @@
 
 ### 2.1 Clases e identificadores
 
-- [ ] ReqC1: Crear una clase `IMPORTANTE` para dar formato a algunos textos de tu página web.
-  - [ ] ReqS2: Cuando sea un `<p>`, que su fuente sea Arial. Cuando sea un `<h1>`, que su fuente sea Sans-Serif.
-- [ ] ReqC3: Destacar un título utilizando el identificador `TITULO` con fuente de tamaño 18pt.
-  - [ ] ReqS4: Utilizar otro identificador dándole un formato diferente al títulos `<h1>` con fuente de tamaño 14pt.
+- [x] ReqC1: Crear una clase `IMPORTANTE` para dar formato a algunos textos de tu página web.
+  - [x] ReqS2: Cuando sea un `<p>`, que su fuente sea Arial. Cuando sea un `<h1>`, que su fuente sea Sans-Serif.
+- [x] ReqC3: Destacar un título utilizando el identificador `TITULO` con fuente de tamaño 18pt.
+  - [x] ReqS4: Utilizar otro identificador dándole un formato diferente al títulos `<h1>` con fuente de tamaño 14pt.
   - [ ] ReqS5: Añadir al texto que tenga el identificador `TITULO` la clase `IMPORTANTE`.
 
 ### 2.2 Selectores
 
 - [x] ReqC6: Estilo de fuente "normal" en toda la página.
-- [ ] ReqC7: Centrar contenidos de títulos `<h1>` y de la clase `IMPORTANTE`.
+- [x] ReqC7: Centrar contenidos de títulos `<h1>` y de la clase `IMPORTANTE`.
 - [ ] ReqC8: Todos los párrafos están identados y un poco opacos.
 - [ ] ReqS9: El texto `<strong>` de un párrafo está subrayado.
 - [ ] ReqC10: Los artículos hijos directos de secciones tienen márgenes y relleno. (margin + padding)

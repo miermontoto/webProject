@@ -12,6 +12,10 @@ h1,h2,h3 { /* fuente de los títulos */
 /* ------- body ---- */
 
 /* ---- títulos ---- */
+h1 {
+    text-align: center; /*ReqC7*/
+}
+
 h2 {
     font-size: 1.5em;
     color: gray; 
@@ -37,6 +41,27 @@ div {
 
 .sepDiv {
     visibility: hidden;
+}
+
+.IMPORTANTE { /*ReqC1*/
+    text-align: center; /*ReqC7*/
+    /*color: red;*/
+}
+
+p.IMPORTANTE {
+    font-family: Arial; /*ReqS2*/
+}
+
+h1.IMPORTANTE {
+    font-family: sans-serif; /*ReqS2*/
+}
+
+#TITULO {
+    font-size: 18pt; /*ReqC3*/
+}
+
+h1#TITULO2 {
+    font-size: 14pt; /*ReqS4*/
 }
 
 hr {
