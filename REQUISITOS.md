@@ -65,8 +65,8 @@
 
 ### 2.3 Pseudoclases
 
-- [ ] ReqC11: Los links cambian de color dependiendo de si han sido visitados o no y de si se arrastra el cursor sobre ellos.
-- [ ] ReqC12: El primer y el último elemento de una lista estarán en negrita, la primera letra con mayúsculas y el resto en minúsculas y con sombra.
+- [x] ReqC11: Los links cambian de color dependiendo de si han sido visitados o no y de si se arrastra el cursor sobre ellos.
+- [x] ReqC12: El primer y el último elemento de una lista estarán en negrita, la primera letra con mayúsculas y el resto en minúsculas y con sombra.
 - [ ] ReqC13: La primera letra de los artículos tiene borde, indicando explícitamente su anchura, color y estilo. Los bordes son diferentes dos a dos.
 - [ ] ReqC14: La primera línea de un párrafo está ligeramente en negrita.
 

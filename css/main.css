@@ -68,6 +68,28 @@ hr {
     clear: both;
 }
 
+a:visited {
+    color: black; /*ReqC11*/
+}
+
+a:link {
+    color: lightskyblue; /*ReqC11*/
+}
+
+a:hover {
+    color: yellow; /*ReqC11*/
+}   
+
+li:first-of-type li:last-of-type { /*ReqC12*/
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-transform: lowercase;
+}
+
+li:first-of-type:first-letter li:last-of-type:first-letter {
+    text-transform: uppercase; /*ReqC12*/
+}
+
 p {
     text-align: justify;
     text-justify: inter-word;
@@ -90,10 +112,6 @@ code {
     background-color: #352879;
     color: #c4bcee;
     font-weight: bolder;
-}
-
-a {
-    color: blue;
 }
 
 /* ----- footer ---- */
