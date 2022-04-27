@@ -14,24 +14,25 @@
 
 ### 1.2 Características de texto
 
-- [ ] ReqH7: Marcar algo como importante.
-- [ ] ReqH8: Marcar algo como especial, diferente.
-- [ ] ReqH9: Alguna definición.
-- [ ] ReqH10: Algo de código de programación.
+- [x] ReqH7: Marcar algo como importante.
+- [x] ReqH8: Marcar algo como especial, diferente.
+- [x] ReqH9: Alguna definición.
+- [x] ReqH10: Algo de código de programación.
 
 ### 1.3 Enlaces
 
-- [ ] ReqH11: Enlaces a páginas web externas y a distintos destinos de visualización de esas páginas.
+- [x] ReqH11: Enlaces a páginas web externas y a distintos destinos de visualización de esas páginas.
+  - [ ] Revisar. Ojo con lo de "distintos destinos". 
 - [x] ReqH12: Enlaces a imágenes o vídeos utilizando referencias absolutas a elementos externos.
 - [x] ReqH13: Enlaces a imágenes o vídeos utilizando referencias relativas a elementos internos.
-- [ ] ReqH14: Correo electrónico indicando un asunto.
+- [x] ReqH14: Correo electrónico indicando un asunto.
 - [x] ReqH15: Enlaces a las otras dos páginas del proyecto.
 
 ### 1.4 Imágenes, videos y audios
 
-- [ ] ReqH16: Una imagen dotada de tamaño.
-- [ ] ReqH17: Uun vídeo dotado de tamaño.
-- [ ] ReqH18: Alternativas para evitar fallos en los vídeos (códecs).
+- [x] ReqH16: Una imagen dotada de tamaño.
+- [x] ReqH17: Un vídeo dotado de tamaño.
+- [x] ReqH18: Alternativas para evitar fallos en los vídeos (códecs).
 
 ### 1.5 Bloques
 
@@ -56,7 +57,7 @@
 
 ### 2.2 Selectores
 
-- [ ] ReqC6: Estilo de fuente "normal" en toda la página.
+- [x] ReqC6: Estilo de fuente "normal" en toda la página.
 - [ ] ReqC7: Centrar contenidos de títulos `<h1>` y de la clase `IMPORTANTE`.
 - [ ] ReqC8: Todos los párrafos están identados y un poco opacos.
 - [ ] ReqS9: El texto `<strong>` de un párrafo está subrayado.
