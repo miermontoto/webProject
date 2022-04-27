@@ -28,7 +28,7 @@
         </header>
         <hr>
         <nav>
-            <h2> Enlaces </h2>
+            <h2> Enlaces </h2> <!--ReqH15--->
             <p>
                 <ul>
                     <li> <a href="index.html">Principal</a> </li>
@@ -42,12 +42,13 @@
 
         <section>
             <div id="intro">
-                <figure id="carátula">
-                    <img src="media/carátula.png">
+                <figure id="carátula"> 
+                    <img src="media/carátula.png" title="Carátula de Otros Mundos, Otros Soles" width="100%"
+                        alt="Carátula de Otros Mundos, Otros Soles"> <!--ReqH13--->
                     <figcaption> Carátula del álbum.</figcaption>
                 </figure>
                 <p> 
-                    Otros Mundos, Otros Soles (2001) es el
+                    <span class="IMPORTANTE">Otros Mundos, Otros Soles</strong> (2001) es el <!--ReqH7--->
                     cuarto álbum del proyecto mierense
                     SOMNIUM plane music. El álbum es una
                     colección de diferentes texturas y sonidos
@@ -57,15 +58,16 @@
             </div>
             <hr class="sepDiv">
             <div id="grupo">
-                <figure id="paisajes">
-                    <img src="https://ia601401.us.archive.org/33/items/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01-32234765800.jpg">
+                <figure id="paisajes"> 
+                    <img src="https://ia601401.us.archive.org/33/items/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01-32234765800.jpg"
+                        title="Carátula del primer álbum" width="100%" alt="Carátula del primer álbum"> <!--ReqH12--->
                     <figcaption>  Paisajes analógicos, <br> su primer álbum. </figcaption>
                 </figure>
                 <p> 
                     <abbr title="SOMNIUM plane music">SPM</abbr> es un proyecto
                     fundado a principio de la década de los 80s por Manuel Jesús Rodríguez,
                     que por aquel entonces era estudiante del grado de Medicina. Después de
-                    publicar su primer álbum en cassette, Paisajes Analógicos (1984, Fusión D.E)
+                    publicar su primer álbum en cassette, <strong>Paisajes Analógicos</strong> (1984, <em>Fusión D.E</em>) <!--ReqH8--->
                     y vender cerca de 1000 unidades, el grupo dejó de estar en activo hasta
                     principios de los 90s. Fue entonces cuando se unió al proyecto Guzmán Concejo,
                     estudiante de Biología y con experiencia en el campo de la música. A partir 
@@ -77,16 +79,60 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="estilo">
+            <div id="lanzamientos">
                 <p>
                     El álbum se lanzó de manera independiente en el 2001 en CD, pero
                     hoy en día ya no queda mucha información sobre dicho lanzamiento.
                     En su lugar, el grupo ha relanzado dos veces el álbum de manera
                     digital, una en 2015 a través de su página en Bandcamp, y otra muy
-                    recientemente 
+                    recientemente a través de una discográfica argentina de nombre
+                    <a href="https://www.cyclicaldreams.com/">Cyclical Dreams</a>. <!--ReqH11--->
                 </p>
             </div>
             <hr class="sepDiv">
+            <div id="estilo">
+                <figure id="vid">
+                    <video controls muted preload autoplay loop width="100%"> <!--ReqH17--->
+                        <source src="media/exteriorLive.mp4" type="video/mp4">
+                        <source src="media/exteriorLive.ogg" type="video/ogg">
+                        <source src="media/exteriorLive.webm" type="video/webm"> <!--ReqH18--->
+                        <p> Tu navegador no soporta el elemento <code>video</code> </p>
+                    </video>
+                </figure>
+                <p>
+                    Es difícil definir el estilo. Todos los temas tienen un tono muy
+                    ambiental, que deja al oyente interpretar libremente su intención
+                    y mensaje. El grupo lo define como 
+                    <dfn title="Es un genero musical inventado por el grupo que combina música electrónica, música sinfónica y música sintética.">electrosynthphonic</dfn>. <!--ReqH9--->
+                </p>
+            </div>
+            <hr class="sepDiv">
+            <div id="creación">
+                <p>
+                    Toda la música de <abbr title="SOMNIUM plane music">SPM</abbr> está creada
+                    utilizando una gran variedad de sintetizadores, teclados y otros instrumentos,
+                    incluyendo ordenadores de diferentes épocas. Entre estos ordenadores se encuentra
+                    una Atari ST y un MacBook G3 clásico de Apple. Por supuesto, el grupo ha tenido
+                    que programar unas pocas líneas de código: <br>
+                    <code> <!--ReqH10--->
+                        10 FOR L=S TO S+24:POKE L,0:NEXT <br>
+                        20 POKE S+5,9:POKE S+6,0 <br>
+                        30 POKE S+24,15 <br>
+                        40 READ HF,LF,DR <br>
+                        50 IF HF=0 THEN END <br>
+                        60 POKE S+1,HF:POKE S,LF <br>
+                        70 POKE S+4,33 <br>
+                        80 FOR T=1 TO DR:NEXT <br>
+                        90 POKE S+4,32:FOR T=1 TO 50:NEX <br>
+                        100 GOTO 40 <br>
+                    </code>
+                </p>
+                <p>
+                    Además, el grupo ha recurrido a su ingenio y su conocimiento en la materia para crear
+                    sus propios instrumentos que luego suben a escena para dar el mejor espectáculo posible.
+                    En su estudio se pueden escuchar marcas de renombre como Stratocaster, Korg o Fender.
+                </p>
+            </div>
             <article> <!--ReqH6--->
                 Biografía. 
             </article>
@@ -105,8 +151,8 @@
         </section>
         <hr>
         <footer> <!--ReqH5--->
-            (c) <a id="mail" href="mailto:UO283319@uniovi.es">Juan Mier</a> 
-            2022, todos los derechos reservados. 
+            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web">Juan Mier</a> <!--ReqH14--->
+            <time datetime="2022-05-07">7 de mayo de 2022</time>, todos los derechos reservados. 
         </footer>
     </body>
 </html>
