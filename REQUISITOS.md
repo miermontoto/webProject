@@ -4,12 +4,13 @@
 
 ### 1.1 Elementos básicos
 
-- [ ] ReqH1
-- [ ] ReqH2
-- [ ] ReqH3
-- [ ] ReqH4
-- [ ] ReqH5
-- [ ] ReqH6
+- [x] ReqH1
+- [x] ReqH2
+- [x] ReqH3
+- [x] ReqH4
+- [x] ReqH5
+- [x] ReqH6
+  - [ ] Desarrollar artículo, ahora mismo está incompleto.
 
 ### 1.2 Características de texto
 
