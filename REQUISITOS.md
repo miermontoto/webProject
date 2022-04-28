@@ -2,6 +2,7 @@
 
 ## 1. HTML
 (23/23) => 100%
+
 Dos elementos por revisar.
 
 ### 1.1 Elementos básicos
@@ -49,6 +50,7 @@ Dos elementos por revisar.
 
 ## 2. CSS
 (16/23) => 69.5%
+
 Tres elementos a revisar.
 
 ### 2.1 Clases e identificadores
@@ -99,6 +101,7 @@ Tres elementos a revisar.
 
 ## 3. JavaScript
 (2/28) => 7%
+
 Un elemento por revisar.
 
 ### 3.1 Formulario
