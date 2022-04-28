@@ -21,7 +21,7 @@
     </head>
     <body onload="/*checkMayorEdad('fechaNacimiento', 'checkDate','formSubmit')*/" >
         <header> <!--ReqH4---> <!--ReqH19--->
-            <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1>
+            <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
         </header>
         <hr>
@@ -111,7 +111,7 @@
                     incluyendo ordenadores de diferentes épocas. Entre estos ordenadores se encuentra
                     una Atari ST y un MacBook G3 clásico de Apple. Por supuesto, el grupo ha tenido
                     que programar unas pocas líneas de código: <br>
-                    <code> <!--ReqH10--->
+                    <code lang="basic"> <!--ReqH10--->
                         10 FOR L=S TO S+24:POKE L,0:NEXT <br>
                         20 POKE S+5,9:POKE S+6,0 <br>
                         30 POKE S+24,15 <br>
@@ -120,7 +120,7 @@
                         60 POKE S+1,HF:POKE S,LF <br>
                         70 POKE S+4,33 <br>
                         80 FOR T=1 TO DR:NEXT <br>
-                        90 POKE S+4,32:FOR T=1 TO 50:NEX <br>
+                        90 POKE S+4,32:FOR T=1 TO 50:NEXT <br>
                         100 GOTO 40 <br>
                     </code>
                 </p>
@@ -134,15 +134,61 @@
                 Biografía. 
             </article>
             <hr class="sepDiv">
+            <div id="releases">
+                <!-- Lista numerada de la discografía del grupo -->
+                <ol> <!--ReqH21-->
+                    <li> Paisajes analógicos, 1984 </li>
+                    <li> Sequence, 1993 </li>
+                    <li> Involution, 1994 </li>
+                    <li> Otros Mundos, Otros Soles </li>
+                    <ul> <!--ReqH22-->
+                        <li>CD-R, 2001</li>
+                        <li>Digital, 2015</li>
+                        <li>Digital (Cyclical Dreams), 2022</li>
+                    </ul>
+                    <li> ATMOSPHERE, 2020 </li>
+                </ol>
+
+                <!-- Tabla con las discográficas que publiquen cada disco -->
+                <table> <!--ReqH23-->
+                    <caption>Relación de discográficas y lanzamientos</caption>
+                    <thead>
+                        <tr>
+                            <th>Disco</th>
+                            <th>Fusión DE</th>
+                            <th>Independiente</th>
+                            <th>Cyclical Dreams</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Paisajes</td> <td>x</td> <td></td> <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sequence</td> <td></td> <td rowspan="2">x</td> <td></td>
+                    </tr>
+                    <tr>
+                        <td>Involution</td> <td></td> <td></td>
+                    </tr>
+                    <tr>
+                        <td>Otros Mundos</td> <td></td> <td colspan="2">x</td>
+                    </tr>
+                    <tr>
+                        <td>ATMOSPHERE</td> <td></td> <td>x</td> <td></td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="sepDiv">
             <hr>
-            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es">
+            <!-- El formulario debe comprobarse antes de enviarse. -->
+            
+            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es"> <!--ReqF1-->
                 <fieldset> <label for="fieldset"> Formulario de sugerencias </label> <br>
                     <input type="text" id="nombre" placeholder="Nombre" required> <br>
                     <input type="email" id="email" placeholder="Email" required> <br>
                     <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" required
                         oninput="checkMayorEdad(this.id, 'checkDate', 'formSubmit')"> <span id="checkDate"></span> <br>
                     <textarea name="sugerencias" placeholder="Sugerencias" required></textarea> <br>
-                    <input type="submit" value="Enviar" id="formSubmit">
+                    <input type="submit" value="Enviar" id="formSubmit"> <!--ReqF2-->
                 </fieldset>
             </form>
         </section>

@@ -16,12 +16,25 @@ h1 {
     text-align: center; /*ReqC7*/
 }
 
+h1 + h2 {
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
 h2 {
     font-size: 1.5em;
     color: gray; 
 }
 
 /* -- contenido ---- */
+body { /*ReqS15*/
+    background-image: url(media/carátula.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 figure > * {
     width: 100%;
     height: 100%;
@@ -30,8 +43,9 @@ figure > * {
 figure {
     position: float;
     float: right;
-    width: 10%;
+    width: 12%;
     height: inherit;
+    z-index: 1;
 }
 
 div {
@@ -90,9 +104,34 @@ li:first-of-type:first-letter li:last-of-type:first-letter {
     text-transform: uppercase; /*ReqC12*/
 }
 
+p:first-line {
+    font-weight: 600; /*ReqC14*/
+    /* El valor por defecto es 400. */
+}
+
+article:first-letter { /*ReqC13*/
+    border: red dashed 1px;
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.1em;
+}
+
+p strong {
+    text-decoration: underline; /*ReqS9*/
+}
+
 p {
     text-align: justify;
     text-justify: inter-word;
+    /*ReqC8*/
+    padding: 0.5em;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+section > article {
+    /*ReqC10*/
+    margin: 0.5em;
+    padding: 0.5em;
 }
 
 figcaption {
@@ -100,18 +139,34 @@ figcaption {
     border-style: solid;
     border-width: 0.1em;
     border-top-style: none;
-
-    /* <- inútil
-    border-top-width: 0px;
-    padding-top: 0px;*/
 }
 
 code {
+    /* Código estilo C64 */
     font-family: 'Consolas', monospace;
     text-transform: uppercase;
     background-color: #352879;
     color: #c4bcee;
     font-weight: bolder;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+td {
+    padding: 0.5em; /*ReqC20*/
 }
 
 /* ----- footer ---- */
