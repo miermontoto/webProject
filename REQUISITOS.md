@@ -100,39 +100,39 @@ Tres elementos a revisar.
 - [ ] ReqS22: Existen prioridades en caso de solapamiento. (z-index)
 
 ## 3. JavaScript
-(2/28) => 7%
+(8/28)
 
-Un elemento por revisar.
+Dos elemento por revisar.
 
 ### 3.1 Formulario
 
 - [x] ReqF1: El formulario tiene nombre.
 - [x] ReqF2: El formulario no debe comprobarse antes de enviarse.
-  - [ ] ¿Cuenta `required` como comprobación?
-- [ ] ReqF3: No deben hacerse sugerencias cuando se esté rellenando.
-- [ ] ReqF4: El resultado del formulario se muestra en una pestaña aparte.
-- [ ] ReqF5: El resultado se envía por correo.
+- [x] ReqF3: No deben hacerse sugerencias mientras se esté rellenando.
+- [x] ReqF4: El resultado del formulario se muestra en una pestaña aparte.
+  - No funciona `target="_blank"`.
+- [x] ReqF5: El resultado se envía por correo.
 
 ### 3.2 Elementos del formulario
 
 - [ ] ReqF6: Un panel que contiene:
-  - [ ] ReqF7: Un cuadro de texto.
-  - [ ] ReqF8: Otro cuadro de texto para incluir una contraseña.
-  - [ ] ReqF9: Se puede incluir un teléfono.
-  - [ ] ReqF10: Se puede introducir una URL.
+  - [x] ReqF7: Un cuadro de texto.
+  - [x] ReqF8: Otro cuadro de texto para incluir una contraseña.
+  - [x] ReqF9: Se puede incluir un teléfono.
+  - [x] ReqF10: Se puede introducir una URL.
 - [ ] ReqF11: Un bloque de opciones excluyentes. Por defecto se marca una opción.
 - [ ] ReqF12: Un bloque de casillas de verificación. Las opciones del mismo tipo están en un panel.
 - [ ] ReqF13: Un bloque para escoger un color.
 - [ ] ReqF14: Una lista desplegable. Tiene al menos dos grupos, la opción por defecto indica lo que debe seleccionar el usuario.
 - [ ] ReqF15: Existe la posibilidad de subir un archivo.
-- [ ] ReqF16: Existe la posibilidad de escoger una fecha y hora.
-- [ ] ReqF17: Botón de submit y botón de reset.
+- [x] ReqF16: Existe la posibilidad de escoger una fecha y hora.
+- [x] ReqF17: Botón de submit y botón de reset.
 
 ### 3.3 Código JS
 
 - [ ] ReqF18: Se modifica el contenido de los elementos HTML en función de los datos introducidos.
 - [ ] ReqF19: Se cambia el estilo de los elementos del formulario en función de si son valores válidos o no.
-- [ ] ReqF20: Se indica alguna ayuda cuando se detecte (mediante js) que un campo no es válido.
+- [x] ReqF20: Se indica alguna ayuda cuando se detecte (mediante js) que un campo no es válido.
 - [ ] ReqJ21: Una función con varios parámetros que sea llamada con diferentes valores de los mismos.
 - [ ] ReqF22: Los dos eventos de foco sobre algún elemento.
 - [ ] ReqF23: Algún evento de teclado.

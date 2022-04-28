@@ -169,6 +169,16 @@ td {
     padding: 0.5em; /*ReqC20*/
 }
 
+#list {
+    position: float;
+    float: left;
+}
+
+#table {
+    position: float;
+    float: right;
+}
+
 /* ----- footer ---- */
 
 footer {

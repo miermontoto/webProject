@@ -134,8 +134,9 @@
                 Biografía. 
             </article>
             <hr class="sepDiv">
-            <div id="releases">
-                <!-- Lista numerada de la discografía del grupo -->
+            <div id="list" class="leftFloat">
+                En total, el grupo ha publicado cinco discos a lo largo de los años:
+
                 <ol> <!--ReqH21-->
                     <li> Paisajes analógicos, 1984 </li>
                     <li> Sequence, 1993 </li>
@@ -148,8 +149,8 @@
                     </ul>
                     <li> ATMOSPHERE, 2020 </li>
                 </ol>
-
-                <!-- Tabla con las discográficas que publiquen cada disco -->
+            </div>
+            <div id="table" class="leftFloat">
                 <table> <!--ReqH23-->
                     <caption>Relación de discográficas y lanzamientos</caption>
                     <thead>
@@ -179,16 +180,16 @@
             </div>
             <hr class="sepDiv">
             <hr>
-            <!-- El formulario debe comprobarse antes de enviarse. -->
-            
-            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es"> <!--ReqF1-->
+            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es" target="_blank" autocomplete="off" novalidate> <!--ReqF1---> <!--ReqF5---> <!--ReqF4---> <!--ReqF2---> <!--ReqF3--->
                 <fieldset> <label for="fieldset"> Formulario de sugerencias </label> <br>
-                    <input type="text" id="nombre" placeholder="Nombre" required> <br>
-                    <input type="email" id="email" placeholder="Email" required> <br>
-                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" required
-                        oninput="checkMayorEdad(this.id, 'checkDate', 'formSubmit')"> <span id="checkDate"></span> <br>
-                    <textarea name="sugerencias" placeholder="Sugerencias" required></textarea> <br>
-                    <input type="submit" value="Enviar" id="formSubmit"> <!--ReqF2-->
+                    <input type="text" id="user" placeholder="Usuario"> <br> <!--ReqF7--->
+                    <input type="password" id="pass" placeholder="Contraseña"> <br> <!--ReqF8--->
+                    <input type="tel" id="teléfono" placeholder="Teléfono"> <br> <!--ReqF9--->
+                    <input type="url" id="userWeb" placeholder="Página web personal"> <br> <!--ReqF10--->
+                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento"> <span id="checkDate"></span> <br> <!--ReqF16--->
+                    <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br>
+                    <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">
+                    <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17--->
                 </fieldset>
             </form>
         </section>

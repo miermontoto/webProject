@@ -3,15 +3,18 @@ function mayorEdad(fecha) {
     return hoy.setFullYear(hoy.getFullYear() - 18) >= fecha;
 }
 
-function checkMayorEdad(idFecha, idSpan, idSubmit) {
-    var spanValue;
-    if(mayorEdad(document.getElementById(idFecha).valueAsDate)) {
-        spanValue = '✅';
-        document.getElementById(idSubmit).disabled = false;
-    } else {
-        spanValue = '❌';
-        document.getElementById(idSubmit).disabled = true;
-    }
-    document.getElementById(idSpan).innerHTML = spanValue;
+function checkMayorEdad(idFecha, idSpan) {
+    var booleanCheck = mayorEdad(document.getElementById(idFecha).valueAsDate);
+    document.getElementById(idSpan).innerHTML = 
+        booleanCheck ? '' : '❌ Debes de ser mayor de edad para enviar este formulario.'; // ReqF20
+    return booleanCheck;
+}
+
+function comprobar() {
+    formDom = document.getElementById('idSugerencias');
+    var check = false;
+    check |= checkMayorEdad('fechaNacimiento', 'checkDate');
+
+    if(check) formDom.submit();
 }
 
