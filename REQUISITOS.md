@@ -1,9 +1,6 @@
 # Bulletlist de requisitos
 
 ## 1. HTML
-(23/23) => 100%
-
-Dos elementos por revisar.
 
 ### 1.1 Elementos básicos
 
@@ -25,7 +22,6 @@ Dos elementos por revisar.
 ### 1.3 Enlaces
 
 - [x] ReqH11: Enlaces a páginas web externas y a distintos destinos de visualización de esas páginas.
-  - [ ] Revisar. Ojo con lo de "distintos destinos".
 - [x] ReqH12: Enlaces a imágenes o vídeos utilizando referencias absolutas a elementos externos.
 - [x] ReqH13: Enlaces a imágenes o vídeos utilizando referencias relativas a elementos internos.
 - [x] ReqH14: Correo electrónico indicando un asunto.
@@ -49,9 +45,8 @@ Dos elementos por revisar.
 - [x] ReqH23: Una tabla, combinando celdas tanto en filas como en columnas.
 
 ## 2. CSS
-(16/23) => 69.5%
 
-Tres elementos a revisar.
+Un elemento a revisar.
 
 ### 2.1 Clases e identificadores
 
@@ -60,7 +55,6 @@ Tres elementos a revisar.
 - [x] ReqC3: Un título destacado utilizando el identificador `TITULO` con fuente de tamaño 18pt.
   - [x] ReqS4: Otro identificador diferente para títulos que tengan 14pt de tamaño de fuente.
   - [x] ReqS5: El texto marcado como título `TÍTULO` es también `IMPORTANTE`.
-    - [ ] Revisar.
 
 ### 2.2 Selectores
 
@@ -75,7 +69,6 @@ Tres elementos a revisar.
 - [x] ReqC11: Los links cambian de color dependiendo de si han sido visitados o no y de si se arrastra el cursor sobre ellos.
 - [x] ReqC12: El primer y el último elemento de una lista estarán en negrita, la primera letra con mayúsculas y el resto en minúsculas y con sombra.
 - [x] ReqC13: La primera letra de los artículos tiene borde, indicando explícitamente su anchura, color y estilo. Los bordes son diferentes dos a dos.
-  - [ ] Comprobar bordes "diferentes dos a dos".
 - [x] ReqC14: La primera línea de un párrafo está ligeramente en negrita.
 
 ### 2.4 Fondos
@@ -90,9 +83,9 @@ Tres elementos a revisar.
 
 ### 2.6 Tablas
 
-- [ ] ReqC19: La posición del título de las tablas está indicado explícitamente.
+- [x] ReqC19: La posición del título de las tablas está indicado explícitamente.
+  - Revisar.
 - [x] ReqC20: Las celdas de una tabla tienen espacios entre sí.
-  - [ ] ¿Es esto?
 
 ### 2.7 Posicionamiento y visualización
 
@@ -100,7 +93,6 @@ Tres elementos a revisar.
 - [ ] ReqS22: Existen prioridades en caso de solapamiento. (z-index)
 
 ## 3. JavaScript
-(8/28)
 
 Dos elemento por revisar.
 
@@ -115,7 +107,7 @@ Dos elemento por revisar.
 
 ### 3.2 Elementos del formulario
 
-- [ ] ReqF6: Un panel que contiene:
+- [x] ReqF6: Un panel que contiene:
   - [x] ReqF7: Un cuadro de texto.
   - [x] ReqF8: Otro cuadro de texto para incluir una contraseña.
   - [x] ReqF9: Se puede incluir un teléfono.
@@ -124,7 +116,7 @@ Dos elemento por revisar.
 - [ ] ReqF12: Un bloque de casillas de verificación. Las opciones del mismo tipo están en un panel.
 - [ ] ReqF13: Un bloque para escoger un color.
 - [ ] ReqF14: Una lista desplegable. Tiene al menos dos grupos, la opción por defecto indica lo que debe seleccionar el usuario.
-- [ ] ReqF15: Existe la posibilidad de subir un archivo.
+- [x] ReqF15: Existe la posibilidad de subir un archivo.
 - [x] ReqF16: Existe la posibilidad de escoger una fecha y hora.
 - [x] ReqF17: Botón de submit y botón de reset.
 
@@ -143,25 +135,24 @@ Dos elemento por revisar.
   - [ ] ReqJ28: Su función correspondiente.
 
 ## 4. Internacionalización
-(0/17) => 0%
 
 ### 4.1 Requisitos en HTML
 
 #### 4.1.1 General
 
-- [ ] ReqI1: Indicador de idioma para todo el contenido del fichero HTML.
+- [x] ReqI1: Indicador de idioma para todo el contenido del fichero HTML.
 
 #### 4.1.2 Formateadores
 
-- [ ] ReqI2: Un formateador de números decimales.
-- [ ] ReqI3: Un formateador de moneda.
-- [ ] ReqI4: Un formateador de fecha corta.
-- [ ] ReqI5: Un formateador de fecha larga.
+- [x] ReqI2: Un formateador de números decimales.
+- [x] ReqI3: Un formateador de moneda.
+- [x] ReqI4: Un formateador de fecha corta.
+- [x] ReqI5: Un formateador de fecha larga.
 
 #### 4.1.3 Elementos de entrada
 
 - [ ] ReqI6: Varios campos que permitan introducir números.
-- [ ] ReqI7: Un campo que permite introducir fechas.
+- [x] ReqI7: Un campo que permite introducir fechas.
 
 #### 4.1.4 Elementos a mostrar
 
@@ -175,9 +166,7 @@ Dos elemento por revisar.
 
 ### 4.2 Requisitos en I18n.js
 
-- [ ] ReqI12: Al menos 2 funciones que tomen como parámetros varios IDs y que modifiquen algunos
-de los componentes asociados según los valores de los elementos en la WEB a los que se
-refieran los IDs
+- [ ] ReqI12: Al menos 2 funciones que tomen como parámetros varios IDs y que modifiquen algunos de los componentes asociados según los valores de los elementos en la WEB a los que se refieran los IDs.
   - Esta marca se repite por cada función.
   - Se marca el uso de:
     - [ ] ReqI13: un formateador de números decimales.
@@ -187,4 +176,4 @@ refieran los IDs
 
 ### 4.3 Requisitos en fichero CSS
 
-- [ ] ReqI17: Regla que modifica el formato aplicado a una clase dependiendo del idioma.
+- [x] ReqI17: Regla que modifica el formato aplicado a una clase dependiendo del idioma.

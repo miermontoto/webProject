@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!--ReqI1--->
     <head>
         <title>Otros Mundos, Otros Soles (2001)</title> <!--ReqH1--->
 
@@ -16,10 +16,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Roboto&display=swap" rel="stylesheet">
         <!-- js --->
+        <script>
+            // Contenido para I18n.
+            locale = 'es-ES';
+            currencyFormat = new Intl.NumberFormat(locale, {style: 'currency', currency: 'EUR'}); // ReqI3
+            numberFormat = new Intl.NumberFormat(locale, {style: 'decimal'}); // ReqI2
+            dateShortFormat = new Intl.DateTimeFormat(locale, {datestyle: 'short'}); // ReqI4
+            dateFullFormat = new Intl.DateTimeFormat(locale, {datestyle: 'full'}); // ReqI5
+        </script>
         <script src="js/codigo.js"></script>
+        <script src="js/I18n.js"></script>
         <script src="https://livejs.com/live.js"></script>
     </head>
-    <body onload="/*checkMayorEdad('fechaNacimiento', 'checkDate','formSubmit')*/" >
+    <body onload="/*checkLang()*/" >
         <header> <!--ReqH4---> <!--ReqH19--->
             <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
@@ -34,6 +43,7 @@
                     <li> <a href="contacto.html">Contacto</a> </li>
                 </ul>
             </p>
+            <p><a href="index_en.html">View in English 🇬🇧/🇺🇸</a></p>
         </nav>  
         
         <hr>
@@ -180,22 +190,28 @@
             </div>
             <hr class="sepDiv">
             <hr>
+            <label for="formSugerencias">Formulario de Sugerencias</label>
             <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es" target="_blank" autocomplete="off" novalidate> <!--ReqF1---> <!--ReqF5---> <!--ReqF4---> <!--ReqF2---> <!--ReqF3--->
-                <fieldset> <label for="fieldset"> Formulario de sugerencias </label> <br>
+                <fieldset id="info"> <label for="info"> Información general </label> <br> <!--ReqF6--->
                     <input type="text" id="user" placeholder="Usuario"> <br> <!--ReqF7--->
                     <input type="password" id="pass" placeholder="Contraseña"> <br> <!--ReqF8--->
                     <input type="tel" id="teléfono" placeholder="Teléfono"> <br> <!--ReqF9--->
                     <input type="url" id="userWeb" placeholder="Página web personal"> <br> <!--ReqF10--->
-                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento"> <span id="checkDate"></span> <br> <!--ReqF16--->
-                    <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br>
-                    <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">
-                    <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17--->
+                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento"
+                        oninput="updateDateHint(this.id, 'dateHint')"> <span id="dateHint"></span><span id="checkDate"></span> <br> <!--ReqF16--->
+                    <label for="userFile">Una foto tuya:</label>
+                    <input type="file" id="userFile" placeholder="Una imagen tuya"> <br> <!--ReqF15--->
+                    <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br> <!--ReqI7--->
                 </fieldset>
+                <fieldset id="select"> <label for="select">Seleccione:</label>
+                </fieldset>
+                <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">
+                <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17--->
             </form>
         </section>
         <hr>
         <footer> <!--ReqH5--->
-            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web">Juan Mier</a> <!--ReqH14--->
+            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web" target="_blank">Juan Mier</a> <!--ReqH14--->
             <time datetime="2022-05-07">7 de mayo de 2022</time>, todos los derechos reservados. 
         </footer>
     </body>
