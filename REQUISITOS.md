@@ -122,17 +122,17 @@ Dos elemento por revisar.
 
 ### 3.3 Código JS
 
-- [ ] ReqF18: Se modifica el contenido de los elementos HTML en función de los datos introducidos.
+- [x] ReqF18: Se modifica el contenido de los elementos HTML en función de los datos introducidos.
 - [ ] ReqF19: Se cambia el estilo de los elementos del formulario en función de si son valores válidos o no.
 - [x] ReqF20: Se indica alguna ayuda cuando se detecte (mediante js) que un campo no es válido.
-- [ ] ReqJ21: Una función con varios parámetros que sea llamada con diferentes valores de los mismos.
-- [ ] ReqF22: Los dos eventos de foco sobre algún elemento.
-- [ ] ReqF23: Algún evento de teclado.
-  - [ ] ReqJ24: Su función correspondiente.
-- [ ] ReqF25: Algún evento de ratón.
-  - [ ] ReqJ26: Su función correspondiente.
-- [ ] ReqF27: Evento de hacer click en un botón (incluye un botón).
-  - [ ] ReqJ28: Su función correspondiente.
+- [x] ReqJ21: Una función con varios parámetros que sea llamada con diferentes valores de los mismos.
+- [x] ReqF22: Los dos eventos de foco sobre algún elemento.
+- [x] ReqF23: Algún evento de teclado.
+  - [x] ReqJ24: Su función correspondiente.
+- [x] ReqF25: Algún evento de ratón.
+  - [x] ReqJ26: Su función correspondiente.
+- [x] ReqF27: Evento de hacer click en un botón (incluye un botón).
+  - [x] ReqJ28: Su función correspondiente.
 
 ## 4. Internacionalización
 

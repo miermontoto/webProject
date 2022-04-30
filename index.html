@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es"> <!--ReqI1--->
     <head>
-        <title>Otros Mundos, Otros Soles (2001)</title> <!--ReqH1--->
+        <title>Otros Mundos, Otros Soles (2001)</title> <!--ReqH1-->
 
         <!-- meta -->
-        <meta charset="utf-8" name="charset"> <!--ReqH2--->
-        <meta content="somnium,discografía,información,música" name="keywords"> <!--ReqH3--->
+        <meta charset="utf-8" name="charset"> <!--ReqH2-->
+        <meta content="somnium,discografía,información,música" name="keywords"> <!--ReqH3-->
         <meta content="Juan Mier" name="author">
         <meta content="Información sobre un álbum" name="description">
 
-        <!-- css ---> 
+        <!-- css --> 
         <link rel="stylesheet" href="css/main.css">
         <!-- Se importan las fuentes de Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Roboto&display=swap" rel="stylesheet">
-        <!-- js --->
+        <!-- js -->
         <script>
             // Contenido para I18n.
             locale = 'es-ES';
@@ -28,14 +28,16 @@
         <script src="js/I18n.js"></script>
         <script src="https://livejs.com/live.js"></script>
     </head>
-    <body onload="/*checkLang()*/" >
+    <body onload="/*checkLang()*/" onkeypress="actualizarCadena(event, 'cadenaIntroducida')" 
+        onmousemove="actualizarPosRatón(event, 'spanRatón')" onfocus="changeFooterColor('footer', false)"
+            onblur="changeFooterColor('footer', true)"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
         <header> <!--ReqH4---> <!--ReqH19--->
             <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
         </header>
         <hr>
         <nav> <!--ReqH19--->
-            <h2> Enlaces </h2> <!--ReqH15--->
+            <h2> Enlaces </h2> <!--ReqH15-->
             <p>
                 <ul>
                     <li> <a href="index.html">Principal</a> </li>
@@ -47,15 +49,15 @@
         </nav>  
         
         <hr>
-        <section> <!--ReqH19--->
-            <div id="intro"> <!--ReqH20--->
+        <section> <!--ReqH19-->
+            <div id="intro"> <!--ReqH20-->
                 <figure id="carátula"> 
                     <img src="media/carátula.png" title="Carátula de Otros Mundos, Otros Soles" width="100%"
                         alt="Carátula de Otros Mundos, Otros Soles"> <!--ReqH13--->
                     <figcaption> Carátula del álbum.</figcaption>
                 </figure>
                 <p> 
-                    <span class="IMPORTANTE">Otros Mundos, Otros Soles</strong> (2001) es el <!--ReqH7--->
+                    <span class="IMPORTANTE">Otros Mundos, Otros Soles</strong> (2001) es el <!--ReqH7-->
                     cuarto álbum del proyecto mierense
                     SOMNIUM plane music. El álbum es una
                     colección de diferentes texturas y sonidos
@@ -64,10 +66,10 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="grupo"> <!--ReqH20--->
+            <div id="grupo"> <!--ReqH20-->
                 <figure id="paisajes"> 
                     <img src="https://ia601401.us.archive.org/33/items/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01-32234765800.jpg"
-                        title="Carátula del primer álbum" width="100%" alt="Carátula del primer álbum"> <!--ReqH12--->
+                        title="Carátula del primer álbum" width="100%" alt="Carátula del primer álbum"> <!--ReqH12-->
                     <figcaption>  Paisajes analógicos, <br> su primer álbum. </figcaption>
                 </figure>
                 <p> 
@@ -86,23 +88,23 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="lanzamientos"> <!--ReqH20--->
+            <div id="lanzamientos"> <!--ReqH20-->
                 <p>
                     El álbum se lanzó de manera independiente en el 2001 en CD, pero
                     hoy en día ya no queda mucha información sobre dicho lanzamiento.
                     En su lugar, el grupo ha relanzado dos veces el álbum de manera
                     digital, una en 2015 a través de su página en Bandcamp, y otra muy
                     recientemente a través de una discográfica argentina de nombre
-                    <a href="https://www.cyclicaldreams.com/">Cyclical Dreams</a>. <!--ReqH11--->
+                    <a href="https://www.cyclicaldreams.com/">Cyclical Dreams</a>. <!--ReqH11-->
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="estilo"> <!--ReqH20--->
+            <div id="estilo"> <!--ReqH20-->
                 <figure id="vid">
-                    <video controls muted preload autoplay loop width="100%"> <!--ReqH17--->
+                    <video controls muted preload autoplay loop width="100%"> <!--ReqH17-->
                         <source src="media/exteriorLive.mp4" type="video/mp4">
                         <source src="media/exteriorLive.ogg" type="video/ogg">
-                        <source src="media/exteriorLive.webm" type="video/webm"> <!--ReqH18--->
+                        <source src="media/exteriorLive.webm" type="video/webm"> <!--ReqH18-->
                         <p> Tu navegador no soporta el elemento <code>video</code> </p>
                     </video>
                 </figure>
@@ -114,14 +116,14 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="creación"> <!--ReqH20--->
+            <div id="creación"> <!--ReqH20-->
                 <p>
                     Toda la música de <abbr title="SOMNIUM plane music">SPM</abbr> está creada
                     utilizando una gran variedad de sintetizadores, teclados y otros instrumentos,
                     incluyendo ordenadores de diferentes épocas. Entre estos ordenadores se encuentra
                     una Atari ST y un MacBook G3 clásico de Apple. Por supuesto, el grupo ha tenido
                     que programar unas pocas líneas de código: <br>
-                    <code lang="basic"> <!--ReqH10--->
+                    <code lang="basic"> <!--ReqH10-->
                         10 FOR L=S TO S+24:POKE L,0:NEXT <br>
                         20 POKE S+5,9:POKE S+6,0 <br>
                         30 POKE S+24,15 <br>
@@ -140,7 +142,7 @@
                     En su estudio se pueden escuchar marcas de renombre como Stratocaster, Korg o Fender.
                 </p>
             </div>
-            <article> <!--ReqH6--->
+            <article> <!--ReqH6-->
                 Biografía. 
             </article>
             <hr class="sepDiv">
@@ -191,17 +193,17 @@
             <hr class="sepDiv">
             <hr>
             <label for="formSugerencias">Formulario de Sugerencias</label>
-            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es" target="_blank" autocomplete="off" novalidate> <!--ReqF1---> <!--ReqF5---> <!--ReqF4---> <!--ReqF2---> <!--ReqF3--->
-                <fieldset id="info"> <label for="info"> Información general </label> <br> <!--ReqF6--->
-                    <input type="text" id="user" placeholder="Usuario"> <br> <!--ReqF7--->
-                    <input type="password" id="pass" placeholder="Contraseña"> <br> <!--ReqF8--->
+            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es" target="_blank" autocomplete="off" novalidate> <!--ReqF1--> <!--ReqF5--> <!--ReqF4--> <!--ReqF2--> <!--ReqF3-->
+                <fieldset id="info"> <label for="info"> Información general </label> <br> <!--ReqF6-->
+                    <input type="text" id="user" placeholder="Usuario"> <br> <!--ReqF7-->
+                    <input type="password" id="pass" placeholder="Contraseña"> <br> <!--ReqF8-->
                     <input type="tel" id="teléfono" placeholder="Teléfono"> <br> <!--ReqF9--->
-                    <input type="url" id="userWeb" placeholder="Página web personal"> <br> <!--ReqF10--->
+                    <input type="url" id="userWeb" placeholder="Página web personal"> <br> <!--ReqF10-->
                     <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento"
-                        oninput="updateDateHint(this.id, 'dateHint')"> <span id="dateHint"></span><span id="checkDate"></span> <br> <!--ReqF16--->
+                        oninput="updateDateHint(this.id, 'dateHint')"> <span id="dateHint"></span><span id="checkDate"></span> <br> <!--ReqF16-->
                     <label for="userFile">Una foto tuya:</label>
-                    <input type="file" id="userFile" placeholder="Una imagen tuya"> <br> <!--ReqF15--->
-                    <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br> <!--ReqI7--->
+                    <input type="file" id="userFile" placeholder="Una imagen tuya"> <br> <!--ReqF15-->
+                    <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br> <!--ReqI7-->
                 </fieldset>
                 <fieldset id="select"> <label for="select">Seleccione:</label>
                 </fieldset>
@@ -210,8 +212,17 @@
             </form>
         </section>
         <hr>
-        <footer> <!--ReqH5--->
-            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web" target="_blank">Juan Mier</a> <!--ReqH14--->
+        <div id="pruebas" onclick="cambiarBandera(event, 'banderas')"> <!--ReqF27--->
+            <h2>Zona de pruebas</h2>
+            <span>Cadena introducida: </span><span id="cadenaIntroducida"></span> <input type="button" value="Limpiar" onclick="limpiarCadena('cadenaIntroducida')"> <br>
+            <span id="spanRatón"></span> <br>
+            <span>Haga click en la zona de pruebas para cambiar la bandera: </span><span id="banderas">🇪🇸</span> <br>
+            <br>
+            <button id="btn1" onclick="coloresBotones('btn1', 'btn2')">Actualizar(1)</button> <button id="btn2" onclick="coloresBotones('btn2', 'btn1')">Actualizar(2)</button>
+        </div>
+        <hr>
+        <footer id="footer"> <!--ReqH5--->
+            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web" target="_blank">Juan Mier</a> <!--ReqH14-->
             <time datetime="2022-05-07">7 de mayo de 2022</time>, todos los derechos reservados. 
         </footer>
     </body>

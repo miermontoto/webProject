@@ -48,14 +48,14 @@ body { /*ReqS15*/
     background-attachment: fixed;
     background-position: center;
 }
-
+/*
 body:lang(es) {
     background-image: url(../media/carátula.png);
 }
 
 body:lang(en) {
     background-image: url(../media/carátulaInv.png);
-}
+}*/
 
 figure > * {
     width: 100%;
@@ -147,7 +147,8 @@ p {
     text-align: justify;
     text-justify: inter-word;
     opacity: 0.8;
-    text-indent: 2em;
+    /*ReqC8*/
+    padding: 0.5em;
     width: 80%;
 }
 
