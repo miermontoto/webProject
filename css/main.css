@@ -46,6 +46,7 @@ hr {
 p {
     text-align: justify;
     text-justify: inter-word;
+    width: 80%;
 }
 
 figcaption {
