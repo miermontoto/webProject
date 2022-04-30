@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!--ReqI1--->
     <head>
         <title>Otros Mundos, Otros Soles (2001)</title> <!--ReqH1--->
 
@@ -16,18 +16,25 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Roboto&display=swap" rel="stylesheet">
         <!-- js --->
+        <script>
+            // Contenido para I18n.
+            locale = 'es-ES';
+            currencyFormat = new Intl.NumberFormat(locale, {style: 'currency', currency: 'EUR'}); // ReqI3
+            numberFormat = new Intl.NumberFormat(locale, {style: 'decimal'}); // ReqI2
+            dateShortFormat = new Intl.DateTimeFormat(locale, {datestyle: 'short'}); // ReqI4
+            dateFullFormat = new Intl.DateTimeFormat(locale, {datestyle: 'full'}); // ReqI5
+        </script>
         <script src="js/codigo.js"></script>
+        <script src="js/I18n.js"></script>
         <script src="https://livejs.com/live.js"></script>
     </head>
-    <body onload="/*checkMayorEdad('fechaNacimiento', 'checkDate','formSubmit')*/" >
-        <header> <!--ReqH4--->
-            <h1> 
-                <strong> Otros Mundos, Otros Soles </strong> <br>
-                by SOMNIUM plane music
-            </h1>
+    <body onload="/*checkLang()*/" >
+        <header> <!--ReqH4---> <!--ReqH19--->
+            <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
+            <h2>SOMNIUM plane music</h2>
         </header>
         <hr>
-        <nav>
+        <nav> <!--ReqH19--->
             <h2> Enlaces </h2> <!--ReqH15--->
             <p>
                 <ul>
@@ -36,12 +43,12 @@
                     <li> <a href="contacto.html">Contacto</a> </li>
                 </ul>
             </p>
+            <p><a href="index_en.html">View in English 🇬🇧/🇺🇸</a></p>
         </nav>  
         
         <hr>
-
-        <section>
-            <div id="intro">
+        <section> <!--ReqH19--->
+            <div id="intro"> <!--ReqH20--->
                 <figure id="carátula"> 
                     <img src="media/carátula.png" title="Carátula de Otros Mundos, Otros Soles" width="100%"
                         alt="Carátula de Otros Mundos, Otros Soles"> <!--ReqH13--->
@@ -57,7 +64,7 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="grupo">
+            <div id="grupo"> <!--ReqH20--->
                 <figure id="paisajes"> 
                     <img src="https://ia601401.us.archive.org/33/items/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01-32234765800.jpg"
                         title="Carátula del primer álbum" width="100%" alt="Carátula del primer álbum"> <!--ReqH12--->
@@ -79,7 +86,7 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="lanzamientos">
+            <div id="lanzamientos"> <!--ReqH20--->
                 <p>
                     El álbum se lanzó de manera independiente en el 2001 en CD, pero
                     hoy en día ya no queda mucha información sobre dicho lanzamiento.
@@ -90,7 +97,7 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="estilo">
+            <div id="estilo"> <!--ReqH20--->
                 <figure id="vid">
                     <video controls muted preload autoplay loop width="100%"> <!--ReqH17--->
                         <source src="media/exteriorLive.mp4" type="video/mp4">
@@ -107,14 +114,14 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <div id="creación">
+            <div id="creación"> <!--ReqH20--->
                 <p>
                     Toda la música de <abbr title="SOMNIUM plane music">SPM</abbr> está creada
                     utilizando una gran variedad de sintetizadores, teclados y otros instrumentos,
                     incluyendo ordenadores de diferentes épocas. Entre estos ordenadores se encuentra
                     una Atari ST y un MacBook G3 clásico de Apple. Por supuesto, el grupo ha tenido
                     que programar unas pocas líneas de código: <br>
-                    <code> <!--ReqH10--->
+                    <code lang="basic"> <!--ReqH10--->
                         10 FOR L=S TO S+24:POKE L,0:NEXT <br>
                         20 POKE S+5,9:POKE S+6,0 <br>
                         30 POKE S+24,15 <br>
@@ -123,7 +130,7 @@
                         60 POKE S+1,HF:POKE S,LF <br>
                         70 POKE S+4,33 <br>
                         80 FOR T=1 TO DR:NEXT <br>
-                        90 POKE S+4,32:FOR T=1 TO 50:NEX <br>
+                        90 POKE S+4,32:FOR T=1 TO 50:NEXT <br>
                         100 GOTO 40 <br>
                     </code>
                 </p>
@@ -137,21 +144,74 @@
                 Biografía. 
             </article>
             <hr class="sepDiv">
+            <div id="list" class="leftFloat">
+                En total, el grupo ha publicado cinco discos a lo largo de los años:
+
+                <ol> <!--ReqH21-->
+                    <li> Paisajes analógicos, 1984 </li>
+                    <li> Sequence, 1993 </li>
+                    <li> Involution, 1994 </li>
+                    <li> Otros Mundos, Otros Soles </li>
+                    <ul> <!--ReqH22-->
+                        <li>CD-R, 2001</li>
+                        <li>Digital, 2015</li>
+                        <li>Digital (Cyclical Dreams), 2022</li>
+                    </ul>
+                    <li> ATMOSPHERE, 2020 </li>
+                </ol>
+            </div>
+            <div id="table" class="leftFloat">
+                <table> <!--ReqH23-->
+                    <caption>Relación de discográficas y lanzamientos</caption>
+                    <thead>
+                        <tr>
+                            <th>Disco</th>
+                            <th>Fusión DE</th>
+                            <th>Independiente</th>
+                            <th>Cyclical Dreams</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Paisajes</td> <td>x</td> <td></td> <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sequence</td> <td></td> <td rowspan="2">x</td> <td></td>
+                    </tr>
+                    <tr>
+                        <td>Involution</td> <td></td> <td></td>
+                    </tr>
+                    <tr>
+                        <td>Otros Mundos</td> <td></td> <td colspan="2">x</td>
+                    </tr>
+                    <tr>
+                        <td>ATMOSPHERE</td> <td></td> <td>x</td> <td></td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="sepDiv">
             <hr>
-            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es">
-                <fieldset> <label for="fieldset"> Formulario de sugerencias </label> <br>
-                    <input type="text" id="nombre" placeholder="Nombre" required> <br>
-                    <input type="email" id="email" placeholder="Email" required> <br>
-                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" required
-                        oninput="checkMayorEdad(this.id, 'checkDate', 'formSubmit')"> <span id="checkDate"></span> <br>
-                    <textarea name="sugerencias" placeholder="Sugerencias" required></textarea> <br>
-                    <input type="submit" value="Enviar" id="formSubmit">
+            <label for="formSugerencias">Formulario de Sugerencias</label>
+            <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es" target="_blank" autocomplete="off" novalidate> <!--ReqF1---> <!--ReqF5---> <!--ReqF4---> <!--ReqF2---> <!--ReqF3--->
+                <fieldset id="info"> <label for="info"> Información general </label> <br> <!--ReqF6--->
+                    <input type="text" id="user" placeholder="Usuario"> <br> <!--ReqF7--->
+                    <input type="password" id="pass" placeholder="Contraseña"> <br> <!--ReqF8--->
+                    <input type="tel" id="teléfono" placeholder="Teléfono"> <br> <!--ReqF9--->
+                    <input type="url" id="userWeb" placeholder="Página web personal"> <br> <!--ReqF10--->
+                    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento"
+                        oninput="updateDateHint(this.id, 'dateHint')"> <span id="dateHint"></span><span id="checkDate"></span> <br> <!--ReqF16--->
+                    <label for="userFile">Una foto tuya:</label>
+                    <input type="file" id="userFile" placeholder="Una imagen tuya"> <br> <!--ReqF15--->
+                    <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br> <!--ReqI7--->
                 </fieldset>
+                <fieldset id="select"> <label for="select">Seleccione:</label>
+                </fieldset>
+                <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">
+                <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17--->
             </form>
         </section>
         <hr>
         <footer> <!--ReqH5--->
-            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web">Juan Mier</a> <!--ReqH14--->
+            (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web" target="_blank">Juan Mier</a> <!--ReqH14--->
             <time datetime="2022-05-07">7 de mayo de 2022</time>, todos los derechos reservados. 
         </footer>
     </body>
