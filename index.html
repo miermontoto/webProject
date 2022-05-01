@@ -29,8 +29,8 @@
         <script src="https://livejs.com/live.js"></script>
     </head>
     <body onload="/*checkLang()*/" onkeypress="actualizarCadena(event, 'cadenaIntroducida')" 
-        onmousemove="actualizarPosRatón(event, 'spanRatón')" onfocus="changeFooterColor('footer', false)"
-            onblur="changeFooterColor('footer', true)"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
+        onmousemove="actualizarPosRatón(event, 'spanRatón')" onfocus="changeFooterColor('footer', false, 'color')"
+            onblur="changeFooterColor('footer', true, 'color')"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
         <header> <!--ReqH4---> <!--ReqH19--->
             <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
@@ -167,10 +167,10 @@
                     <caption>Relación de discográficas y lanzamientos</caption>
                     <thead>
                         <tr>
-                            <th>Disco</th>
-                            <th>Fusión DE</th>
-                            <th>Independiente</th>
-                            <th>Cyclical Dreams</th>
+                            <th name="th">Disco</th>
+                            <th name="th">Fusión DE</th>
+                            <th name="th">Independiente</th>
+                            <th name="th">Cyclical Dreams</th>
                         </tr>
                     </thead>
                     <tr>
@@ -214,26 +214,28 @@
                 </fieldset>
                 <fieldset id="checkboxes">
                     <legend> <label for="checkboxes">Álbumes del grupo que posee</label> </legend>
-                    <input type="checkbox" name="checkboxes" id="c1" checked> Paisajes Analógicos <br> <!--ReqF12-->
+                    <input type="checkbox" name="checkboxes" id="c1"> Paisajes Analógicos <br> <!--ReqF12-->
                     <input type="checkbox" name="checkboxes" id="c2" disabled title="No se puede comprar"> Sequence <br>
                     <input type="checkbox" name="checkboxes" id="c3" disabled title="No se puede comprar"> Involution <br>
                     <input type="checkbox" name="checkboxes" id="c4"> OMOS <br>
                     <input type="checkbox" name="checkboxes" id="c5" disabled title="No tiene formato físico"> ATMOSPHERE <br>
                 </fieldset>
-                <fieldset id="desplegable">
+                <fieldset id="desplegable"> <!--ReqF13-->
                     <legend> <label for="desplegable">¿Qué tipo de música prefieres?</label> </legend>
-                    <select name="opciones" id="opciones"> <optgroup label="Seleccione una opción: ">
-                        <option value="opcion1">Opción 1</option>
-                        <option value="opcion2">Opción 2</option>
-                        <option value="opcion3">Opción 3</option>
-                    </optgroup> <optgroup label="otra">
-                        <option value="">Opción 4</option>
-                    </optgroup></select>
+                    <select name="opciones" id="opciones"> <optgroup label="Géneros populares">
+                        <option value="opcion1">Hip-hop</option>
+                        <option value="opcion2">Pop</option>
+                        <option value="opcion3">Rock</option>
+                    </optgroup> <optgroup label="Géneros alternativos">
+                        <option value="">Clásica</option>
+                        <option value="">Electrónica</option>
+                        <option value="">Ambiental</option>
+                    </optgroup> </select>
                 </fieldset>
-                <fieldset id="colorFieldset">
+                <fieldset id="colorFieldset"> <!--ReqF13-->
                     <legend> <label for="color">Selector de color</label> </legend>
                     <label for="color">Introduzca su color favorito: </label>
-                    <input type="color" id="color" name="color" value="#ff0000"> <br> <!--ReqF13-->
+                    <input type="color" id="color" name="color" value="#dddddd" onchange="actualizarColorTabla(this.id, 'th')"> <br> <!--ReqF13-->
                 </fieldset>
                 <br>
                 <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">

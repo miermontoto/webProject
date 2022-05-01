@@ -38,12 +38,17 @@ function cambiarBandera(e, idSpan) { // ReqJ28
     document.getElementById(idSpan).innerHTML = banderas[Math.random() * banderas.length | 0];
 }
 
-function changeFooterColor(idFooter, bool) {
-    document.getElementById(idFooter).style.backgroundColor = bool ? '#ff0000' : 'lightgrey';
+function changeFooterColor(idFooter, bool, idColor) {
+    document.getElementById(idFooter).style.backgroundColor = bool ?  'lightgrey' : document.getElementById(idColor).value;
     document.getElementById(idFooter).style.color = bool ? '#ffffff' : 'black';
 }
 
 function coloresBotones(btn1, btn2) { // ReqJ21
     document.getElementById(btn1).style.color = 'blue';
     document.getElementById(btn2).style.color = 'green';
+}
+
+function actualizarColorTabla(idColor, idHead) {
+    var tempDom = document.getElementsByName(idHead);
+    for(var i = 0; i < tempDom.length; i++) tempDom[i].style.backgroundColor = document.getElementById(idColor).value;
 }
