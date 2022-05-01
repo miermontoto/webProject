@@ -8,4 +8,4 @@ function updateDateHint(idDate, idHint) {
     var date = document.getElementById(idDate);
 
     dateHint.innerHTML = dateFullFormat.format(date.valueAsDate); // ReqF18
-}
+} // asdfjjknasdjknknjsdfankjnkjasd nkfnskjadfjknsknjad fknjasdknj fknjsadknj fknjsadf

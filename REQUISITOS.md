@@ -112,13 +112,14 @@ Dos elemento por revisar.
   - [x] ReqF8: Otro cuadro de texto para incluir una contraseña.
   - [x] ReqF9: Se puede incluir un teléfono.
   - [x] ReqF10: Se puede introducir una URL.
-- [ ] ReqF11: Un bloque de opciones excluyentes. Por defecto se marca una opción.
-- [ ] ReqF12: Un bloque de casillas de verificación. Las opciones del mismo tipo están en un panel.
+- [x] ReqF11: Un bloque de opciones excluyentes. Por defecto se marca una opción.
+- [x] ReqF12: Un bloque de casillas de verificación. Las opciones del mismo tipo están en un panel.
 - [ ] ReqF13: Un bloque para escoger un color.
 - [ ] ReqF14: Una lista desplegable. Tiene al menos dos grupos, la opción por defecto indica lo que debe seleccionar el usuario.
 - [x] ReqF15: Existe la posibilidad de subir un archivo.
 - [x] ReqF16: Existe la posibilidad de escoger una fecha y hora.
 - [x] ReqF17: Botón de submit y botón de reset.
+- 
 
 ### 3.3 Código JS
 

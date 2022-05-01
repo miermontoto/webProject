@@ -192,9 +192,9 @@
             </div>
             <hr class="sepDiv">
             <hr>
-            <label for="formSugerencias">Formulario de Sugerencias</label>
+            <h2>Formulario de sugerencias</h2>
             <form method="post" id="formSugerencias" name="sugerencias" enctype="text/plain" action="mailto:UO283319@uniovi.es" target="_blank" autocomplete="off" novalidate> <!--ReqF1--> <!--ReqF5--> <!--ReqF4--> <!--ReqF2--> <!--ReqF3-->
-                <fieldset id="info"> <label for="info"> Información general </label> <br> <!--ReqF6-->
+                <fieldset id="info"> <legend><label for="info"> Información general </label></legend> <!--ReqF6-->
                     <input type="text" id="user" placeholder="Usuario"> <br> <!--ReqF7-->
                     <input type="password" id="pass" placeholder="Contraseña"> <br> <!--ReqF8-->
                     <input type="tel" id="teléfono" placeholder="Teléfono"> <br> <!--ReqF9--->
@@ -205,8 +205,37 @@
                     <input type="file" id="userFile" placeholder="Una imagen tuya"> <br> <!--ReqF15-->
                     <textarea name="sugerencias" placeholder="Sugerencias"></textarea> <br> <!--ReqI7-->
                 </fieldset>
-                <fieldset id="select"> <label for="select">Seleccione:</label>
+                <fieldset id="radios">
+                    <legend> <label for="radios">Región</label> </legend>
+                    <input type="radio" name="radios" id="r1" checked> España, península <br> <!--ReqF11-->
+                    <input type="radio" name="radios" id="r2"> España, islas u otras regiones <br>
+                    <input type="radio" name="radios" id="r3"> Europa <br>
+                    <input type="radio" name="radios" id="r4"> Resto del mundo <br>
                 </fieldset>
+                <fieldset id="checkboxes">
+                    <legend> <label for="checkboxes">Álbumes del grupo que posee</label> </legend>
+                    <input type="checkbox" name="checkboxes" id="c1" checked> Paisajes Analógicos <br> <!--ReqF12-->
+                    <input type="checkbox" name="checkboxes" id="c2" disabled title="No se puede comprar"> Sequence <br>
+                    <input type="checkbox" name="checkboxes" id="c3" disabled title="No se puede comprar"> Involution <br>
+                    <input type="checkbox" name="checkboxes" id="c4"> OMOS <br>
+                    <input type="checkbox" name="checkboxes" id="c5" disabled title="No tiene formato físico"> ATMOSPHERE <br>
+                </fieldset>
+                <fieldset id="desplegable">
+                    <legend> <label for="desplegable">¿Qué tipo de música prefieres?</label> </legend>
+                    <select name="opciones" id="opciones"> <optgroup label="Seleccione una opción: ">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </optgroup> <optgroup label="otra">
+                        <option value="">Opción 4</option>
+                    </optgroup></select>
+                </fieldset>
+                <fieldset id="colorFieldset">
+                    <legend> <label for="color">Selector de color</label> </legend>
+                    <label for="color">Introduzca su color favorito: </label>
+                    <input type="color" id="color" name="color" value="#ff0000"> <br> <!--ReqF13-->
+                </fieldset>
+                <br>
                 <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">
                 <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17--->
             </form>
