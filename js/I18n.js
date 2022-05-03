@@ -22,3 +22,27 @@ function updateCálculo(idNum1, idOp, idNum2, idSpan, idResultado, idMoneda) {
     document.getElementById(idResultado).innerHTML = numberFormat.format(resultado); // ReqI8
     moneda.innerHTML = currencyFormat.format(resultado); // ReqI9
 }
+
+function calcularFecha(idFecha, idOp, idNum, idSpan, idResultado, idMod) {
+    var fecha = document.getElementById(idFecha);
+    var op = document.getElementById(idOp);
+    var num = document.getElementById(idNum);
+    var span = document.getElementById(idSpan);
+    var resultado = document.getElementById(idResultado);
+    var mod = document.getElementById(idMod);
+
+    span.innerHTML = dateShortFormat.format(fecha.valueAsDate) + " " + op.value + " " + numberFormat.format(num.valueAsNumber) + " " + mod.value;
+    var fechaResultado = new Date(fecha.valueAsDate);
+    switch(mod.value) {
+        case "días":
+            fechaResultado.setDate(eval(fechaResultado.getDate() + op.value + num.valueAsNumber));
+            break;
+        case "meses":
+            fechaResultado.setMonth(eval(fechaResultado.getMonth() + op.value + num.valueAsNumber));
+            break;
+        case "años":
+            fechaResultado.setFullYear(eval(fechaResultado.getFullYear() + op.value + num.valueAsNumber));
+            break;
+    }
+    resultado.innerHTML = dateFullFormat.format(fechaResultado); // ReqI10
+}

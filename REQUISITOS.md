@@ -159,7 +159,7 @@ Dos elemento por revisar.
 
 - [x] ReqI8: Se muestra el resultado de operar varios campos como otro número.
 - [x] ReqI9: Se muestra el resultado de operar con varios campos como moneda.
-- [ ] ReqI10: Se muestra el resultado de operar con varios campos como fecha.
+- [x] ReqI10: Se muestra el resultado de operar con varios campos como fecha.
 
 #### 4.1.5 Formato
 

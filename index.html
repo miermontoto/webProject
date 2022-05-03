@@ -26,7 +26,7 @@
             locale = 'es-ES';
             currencyFormat = new Intl.NumberFormat(locale, {style: 'currency', currency: 'EUR'}); // ReqI3
             numberFormat = new Intl.NumberFormat(locale, {style: 'decimal'}); // ReqI2
-            dateShortFormat = new Intl.DateTimeFormat(locale, {datestyle: 'short'}); // ReqI4
+            dateShortFormat = new Intl.DateTimeFormat(locale, {datestyle: 'medium'}); // ReqI4
             dateFullFormat = new Intl.DateTimeFormat(locale, {datestyle: 'full'}); // ReqI5
         </script>
         <script src="js/codigo.js"></script>
@@ -38,7 +38,8 @@
                 onmousemove="actualizarPosRatón(event, 'spanRatón')" 
                     onfocus="changeFooterColor('footer', false, 'color')"
                         onblur="changeFooterColor('footer', true, 'color')" 
-                            onload="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
+                            onload="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"
+                                onload="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
         <header> <!--ReqH4---> <!--ReqH19--->
             <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
@@ -259,7 +260,20 @@
             </select>
             <input type="number" name="numtest" id="num2" onchange="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"> <br> <!--ReqI6-->
             <span id="cálculo"></span> = 
-            <strong><span id="resultado"></span></strong> <br> <span id="resCurr"></span>
+            <strong><span id="resultado"></span></strong> <br> <span id="resCurr"></span> <br>
+            <input type="date" name="fechatest" id="fechatest" onchange="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')">
+            <select name="operador" id="op2" onchange="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input type="number" name="numtest2" id="num3" onchange="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')"> 
+            <select name="valorFecha" id="valor" onchange="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')">
+                <option value="días" selected>días</option>
+                <option value="meses">meses</option>
+                <option value="años">años</option>
+            </select><br>
+            <span id="cálculo2"></span> =
+            <strong><span id="resultado2"></span></strong> <br>
         </div>
         <hr>
         <footer id="footer"> <!--ReqH5--->
