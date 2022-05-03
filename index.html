@@ -15,6 +15,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Roboto&display=swap" rel="stylesheet">
+        <!-- iconos -->
+        <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
         <!-- js -->
         <script>
             // Contenido para I18n.
@@ -28,9 +33,12 @@
         <script src="js/I18n.js"></script>
         <script src="https://livejs.com/live.js"></script>
     </head>
-    <body onload="/*checkLang()*/" onkeypress="actualizarCadena(event, 'cadenaIntroducida')" 
-        onmousemove="actualizarPosRatón(event, 'spanRatón')" onfocus="changeFooterColor('footer', false, 'color')"
-            onblur="changeFooterColor('footer', true, 'color')"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
+    <body onload="/*checkLang()*/" 
+            onkeypress="actualizarCadena(event, 'cadenaIntroducida')" 
+                onmousemove="actualizarPosRatón(event, 'spanRatón')" 
+                    onfocus="changeFooterColor('footer', false, 'color')"
+                        onblur="changeFooterColor('footer', true, 'color')" 
+                            onload="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"> <!--ReqF23--> <!--ReqF25--> <!--ReqF22-->
         <header> <!--ReqH4---> <!--ReqH19--->
             <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
@@ -40,7 +48,7 @@
             <h2> Enlaces </h2> <!--ReqH15-->
             <p>
                 <ul>
-                    <li> <a href="index.html">Principal</a> </li>
+                <li> <a href="index.html">Principal</a> </li>
                     <li> <a href="discografía.html">Discografía</a> </li>
                     <li> <a href="contacto.html">Contacto</a> </li>
                 </ul>
@@ -107,12 +115,13 @@
                         <source src="media/exteriorLive.webm" type="video/webm"> <!--ReqH18-->
                         <p> Tu navegador no soporta el elemento <code>video</code> </p>
                     </video>
+                    <figcaption>Canción "El Exterior" en directo.</figcaption>
                 </figure>
                 <p>
                     Es difícil definir el estilo. Todos los temas tienen un tono muy
                     ambiental, que deja al oyente interpretar libremente su intención
                     y mensaje. El grupo lo define como 
-                    <dfn title="Es un genero musical inventado por el grupo que combina música electrónica, música sinfónica y música sintética.">electrosynthphonic</dfn>. <!--ReqH9--->
+                    <dfn title="Es un género musical inventado por el grupo que combina música electrónica, música sinfónica y música sintética.">electrosynthphonic</dfn>. <!--ReqH9--->
                 </p>
             </div>
             <hr class="sepDiv">
@@ -166,28 +175,16 @@
                 <table> <!--ReqH23-->
                     <caption>Relación de discográficas y lanzamientos</caption>
                     <thead>
-                        <tr>
-                            <th name="th">Disco</th>
-                            <th name="th">Fusión DE</th>
-                            <th name="th">Independiente</th>
-                            <th name="th">Cyclical Dreams</th>
-                        </tr>
+                        <th name="th">Disco</th>
+                        <th name="th">Fusión DE</th>
+                        <th name="th">Independiente</th>
+                        <th name="th">Cyclical Dreams</th>
                     </thead>
-                    <tr>
-                        <td>Paisajes</td> <td>x</td> <td></td> <td></td>
-                    </tr>
-                    <tr>
-                        <td>Sequence</td> <td></td> <td rowspan="2">x</td> <td></td>
-                    </tr>
-                    <tr>
-                        <td>Involution</td> <td></td> <td></td>
-                    </tr>
-                    <tr>
-                        <td>Otros Mundos</td> <td></td> <td colspan="2">x</td>
-                    </tr>
-                    <tr>
-                        <td>ATMOSPHERE</td> <td></td> <td>x</td> <td></td>
-                    </tr>
+                    <tr><td>Paisajes</td> <td>x</td> <td></td> <td></td></tr>
+                    <tr><td>Sequence</td> <td></td> <td rowspan="2">x</td> <td></td></tr>
+                    <tr><td>Involution</td> <td></td> <td></td></tr>
+                    <tr><td>Otros Mundos</td> <td></td> <td colspan="2">x</td></tr>
+                    <tr><td>ATMOSPHERE</td> <td></td> <td>x</td> <td></td></tr>
                 </table>
             </div>
             <hr class="sepDiv">
@@ -239,17 +236,30 @@
                 </fieldset>
                 <br>
                 <input type="button" value="Enviar" id="formSubmit" onclick="comprobar()">
-                <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17--->
+                <input type="reset" value="Limpiar" id="formReset"> <!--ReqF17-->
             </form>
         </section>
         <hr>
-        <div id="pruebas" onclick="cambiarBandera(event, 'banderas')"> <!--ReqF27--->
+        <div id="pruebas" onclick="cambiarBandera(event, 'banderas')"> <!--ReqF27-->
             <h2>Zona de pruebas</h2>
+            <h3>Eventos</h3>
             <span>Cadena introducida: </span><span id="cadenaIntroducida"></span> <input type="button" value="Limpiar" onclick="limpiarCadena('cadenaIntroducida')"> <br>
             <span id="spanRatón"></span> <br>
             <span>Haga click en la zona de pruebas para cambiar la bandera: </span><span id="banderas">🇪🇸</span> <br>
             <br>
-            <button id="btn1" onclick="coloresBotones('btn1', 'btn2')">Actualizar(1)</button> <button id="btn2" onclick="coloresBotones('btn2', 'btn1')">Actualizar(2)</button>
+            <button id="btn1" onclick="coloresBotones('btn1', 'btn2')">Actualizar(1)</button> <button id="btn2" onclick="coloresBotones('btn2', 'btn1')">Actualizar(2)</button> <br>
+            <h3>Formateadores (i18n)</h3>
+            <input type="number" name="numtest" id="num1" onchange="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"> <!--ReqI6-->
+            <select name="operador" id="op" onchange="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="number" name="numtest" id="num2" onchange="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"> <br> <!--ReqI6-->
+            <span id="cálculo"></span> = 
+            <strong><span id="resultado"></span></strong> <br> <span id="resCurr"></span>
         </div>
         <hr>
         <footer id="footer"> <!--ReqH5--->

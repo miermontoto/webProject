@@ -77,8 +77,8 @@ Un elemento a revisar.
 
 ### 2.5 Listas
 
-- [ ] ReqC16: Las listas ordenadas tienen viñetas.
-- [ ] ReqC17: Las listas no ordenadas tienen una imagen por viñeta.
+- [x] ReqC16: Las listas ordenadas tienen viñetas.
+- [x] ReqC17: Las listas no ordenadas tienen una imagen por viñeta.
 - [ ] ReqS18: Todas las listas tienen posición, sean ordenadas o no.
 
 ### 2.6 Tablas
@@ -152,13 +152,13 @@ Dos elemento por revisar.
 
 #### 4.1.3 Elementos de entrada
 
-- [ ] ReqI6: Varios campos que permitan introducir números.
+- [x] ReqI6: Varios campos que permitan introducir números.
 - [x] ReqI7: Un campo que permite introducir fechas.
 
 #### 4.1.4 Elementos a mostrar
 
-- [ ] ReqI8: Se muestra el resultado de operar varios los campos como otro número.
-- [ ] ReqI9: Se muestra el resultado de operar con varios campos como moneda.
+- [x] ReqI8: Se muestra el resultado de operar varios campos como otro número.
+- [x] ReqI9: Se muestra el resultado de operar con varios campos como moneda.
 - [ ] ReqI10: Se muestra el resultado de operar con varios campos como fecha.
 
 #### 4.1.5 Formato

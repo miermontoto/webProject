@@ -168,6 +168,14 @@ code {
     font-weight: bolder;
 }
 
+ol > li {
+    list-style-type: lower-roman; /*ReqC16*/
+}
+
+ul > li {
+    /*list-style-image: url(../ico/favicon.ico);*/ /*ReqC17*/
+}
+
 table {
     border: 2px solid black;
     border-collapse: collapse;
