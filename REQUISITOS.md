@@ -163,17 +163,17 @@ Dos elemento por revisar.
 
 #### 4.1.5 Formato
 
-- [ ] ReqI11: Elemento de una clase con formato según el idioma indicado en lang.
+- [x] ReqI11: Elemento de una clase con formato según el idioma indicado en lang.
 
 ### 4.2 Requisitos en I18n.js
 
-- [ ] ReqI12: Al menos 2 funciones que tomen como parámetros varios IDs y que modifiquen algunos de los componentes asociados según los valores de los elementos en la WEB a los que se refieran los IDs.
+- [x] ReqI12: Al menos 2 funciones que tomen como parámetros varios IDs y que modifiquen algunos de los componentes asociados según los valores de los elementos en la WEB a los que se refieran los IDs.
   - Esta marca se repite por cada función.
   - Se marca el uso de:
-    - [ ] ReqI13: un formateador de números decimales.
-    - [ ] ReqI14: un formateador de moneda.
-    - [ ] ReqI15: un formateador de fecha corta.
-    - [ ] ReqI16: un formateador de fecha larga.
+    - [x] ReqI13: un formateador de números decimales.
+    - [x] ReqI14: un formateador de moneda.
+    - [x] ReqI15: un formateador de fecha corta.
+    - [x] ReqI16: un formateador de fecha larga.
 
 ### 4.3 Requisitos en fichero CSS
 
