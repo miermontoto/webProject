@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"> <!--ReqI1-->
+<html lang="it"> <!--ReqI1-->
     <head>
-        <title>Otros Mundos, Otros Soles (2001)</title> <!--ReqH1-->
+        <title>Defensa de Juan Francisco Mier Montoto</title> <!--ReqH1--> <!--DefH1-->
 
         <!-- meta -->
         <meta charset="utf-8" name="charset"> <!--ReqH2-->
@@ -23,28 +23,31 @@
         <!-- js -->
         <script>
             // Contenido para I18n.
-            locale = 'en-UK';
-            currencyFormat = new Intl.NumberFormat(locale, {style: 'currency', currency: 'GBP'}); // ReqI3
+            locale = 'it-IT';
+            currencyFormat = new Intl.NumberFormat(locale, {style: 'currency', currency: 'EUR'}); // ReqI3
             numberFormat = new Intl.NumberFormat(locale, {style: 'decimal'}); // ReqI2
             dateShortFormat = new Intl.DateTimeFormat(locale, {datestyle: 'medium'}); // ReqI4
             dateFullFormat = new Intl.DateTimeFormat(locale, {datestyle: 'full'}); // ReqI5
+
+            nombreVersion = "Versione italiana"; // DefI3
         </script>
         <script src="js/codigo.js"></script>
         <script src="js/I18n.js"></script>
         <script src="https://livejs.com/live.js"></script>
     </head>
-    <body onload="/*checkLang()*/" 
+    <body onload="updateVersionName('nameVersion')"
             onkeypress="actualizarCadena(event, 'cadenaIntroducida')" 
                 onmousemove="actualizarPosRatón(event, 'spanRatón')" 
                     onfocus="changeFooterColor('footer', false, 'color')"
                         onblur="changeFooterColor('footer', true, 'color')" 
                             onload="updateCálculo('num1', 'op', 'num2', 'cálculo', 'resultado', 'resCurr')"
-                                onload="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')"> <!--ReqF22, ReqF23, ReqF25-->
+                                onload="calcularFecha('fechatest', 'op2', 'num3', 'cálculo2', 'resultado2', 'valor')"> <!--ReqF22, ReqF23, ReqF25, DefI3-->
         <header> <!--ReqH4, ReqH19--->
             <h1 class="IMPORTANTE" id="TITULO"> Otros Mundos, Otros Soles </h1> <!--ReqS5-->
             <h2>SOMNIUM plane music</h2>
         </header>
         <hr>
+        
         <nav> <!--ReqH19--->
             <h2> Links </h2> <!--ReqH15-->
             <p>
@@ -54,15 +57,15 @@
                     <li> <a href="contacto.html">Contact</a> </li>
                 </ul>
             </p>
-            <p><a href="index_en.html">Ver en Español 🇪🇸</a></p>
+            <p><a href="index.html">See in English 🇬🇧</a></p>
         </nav>  
-        
+        <span id="nameVersion"></span>
         <hr>
         <section> <!--ReqH19-->
             <div id="intro"> <!--ReqH20-->
                 <figure id="carátula"> 
-                    <img src="media/carátula.png" title="Otros Mundos, Otros Soles cover" width="100%"
-                        alt="Carátula de Otros Mundos, Otros Soles"> <!--ReqH13--->
+                    <img src="media/carátula.png" title="Otros Mundos, Otros Soles cover" width="100%" 
+                        alt="Carátula de Otros Mundos, Otros Soles"> <!--ReqH13---> <!--ReqH16-->
                     <figcaption>Album cover.</figcaption>
                 </figure>
                 <p> 
@@ -92,10 +95,10 @@
             <div id="grupo"> <!--ReqH20-->
                 <figure id="paisajes"> 
                     <img src="https://ia601401.us.archive.org/33/items/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01/mbid-fd6b3fe3-7156-438d-9655-7c2f0fd28c01-32234765800.jpg"
-                        title="Carátula del primer álbum" width="100%" alt="Cover for the first album"> <!--ReqH12-->
+                        title="Carátula del primer álbum" width="100%" alt="Cover for the first album"> <!--ReqH12, DefC5, DefC6-->
                     <figcaption>  Paisajes analógicos, <br> their first album. </figcaption>
                 </figure>
-                <p> 
+                <p> <!--DefC6-->
                     <abbr title="SOMNIUM plane music">SPM</abbr> is a project
                     founded in the early 1980s by Manuel Jesús Rodríguez,
                     At that time he was a medical student. After
@@ -131,7 +134,7 @@
                         10 FOR L=S TO S+24:POKE L,0:NEXT <br>
                         20 POKE S+5,9:POKE S+6,0 <br>
                         30 POKE S+24,15 <br>
-                        40 READ HF,LF,DR <br>
+                        <span class="errordesintaxis">40 READ HF,</span>LF,DR <br> <!--DefC1-->
                         50 IF HF=0 THEN END <br>
                         60 POKE S+1,HF:POKE S,LF <br>
                         70 POKE S+4,33 <br>
@@ -147,17 +150,19 @@
                 </p>
             </div>
             <hr class="sepDiv">
-            <article> <!--ReqH6-->
-                <h2><a href="https://www.synthsequences.com/post/somnium-plane-music-otros-mundos-otros-soles-2001-2022">Review</a></h2>
-                <h3>
-                    “A wonderful blend of vintage tones gathering electronic progressive 
-                    Rock and Cosmic Rock”.
-                </h3>
-                <p>
-                    The album was rated 4.5 stars by <em>synthsequences</em>, a
-                    publication specializing in synthetic music albums and synthesizers.
-                </p>
-            </article>
+            <section id="secDefensa"> <!--ReqH6--> <!--DefH3-->
+                <div id="subdiv1" class="subseccion">
+                    <header><h3>Título 1</h3></header>
+                    <p> Esta es una de las subsecciones de la defensa.</p>
+                </div>
+                <div id="subdiv2" class="subseccion">
+                    <header><h3>Título 2</h3></header>
+                    <p> 
+                        Esta es la otra subsección de la defensa. Me pidieron
+                        transformar el article a section.
+                    </p>
+                </div>
+            </section>
             <hr class="sepDiv">
             <div id="list" class="leftFloat">
                 The group has put out five albums to date:
@@ -169,7 +174,12 @@
                     <li> Otros Mundos, Otros Soles </li>
                     <ul> <!--ReqH22-->
                         <li>CD-R, 2001</li>
-                        <li>Digital, 2015</li>
+                        <li>Digital, 2015
+                            <ol> <!--DefH5-->
+                                <li> Paisajes analógicos, 1984 </li>
+                                <li> Sequence, 1993 </li>
+                            </ol>
+                        </li>
                         <li>Digital (Cyclical Dreams), 2022</li>
                     </ul>
                     <li> ATMOSPHERE, 2020 </li>
@@ -177,18 +187,21 @@
             </div>
             <div id="table" class="rightFloat">
                 <table> <!--ReqH23-->
-                    <caption>Albums relesed per record label</caption>
+                    <caption>Tabla Defensa HTML</caption> <!--DefH7-->
                     <thead>
                         <th name="th">Disco</th>
                         <th name="th">Fusión DE</th>
                         <th name="th">Independent</th>
                         <th name="th">Cyclical Dreams</th>
+                        <th name="th">Datos</th>
                     </thead>
-                    <tr><td>Paisajes</td> <td>x</td> <td></td> <td></td></tr>
-                    <tr><td>Sequence</td> <td></td> <td rowspan="2">x</td> <td></td></tr>
-                    <tr><td>Involution</td> <td></td> <td></td></tr>
-                    <tr><td>Otros Mundos</td> <td></td> <td colspan="2">x</td></tr>
-                    <tr><td>ATMOSPHERE</td> <td></td> <td>x</td> <td></td></tr>
+                    <tbody> <!--DefH6-->
+                        <!-- La tabla original no contenía datos, por lo que era muy difícil y lioso
+                        ordenarlo y verlo bien. He optado por sustituir los campos por el ejemplo. -->
+                        <tr><td>Dato 1</td><td colspan="3">Dato 2</td> <td>Dato 3</td></tr>
+                        <tr><td rowspan="2" colspan="2">Dato 4</td><td>Dato 5</td> <td rowspan="2">Dato 6</td><td>Dato 7</td></tr>
+                        <tr><td>Dato 8</td><td>Dato 9</td></tr>
+                    </tbody>
                 </table>
             </div>
             <hr class="sepDiv">
@@ -208,18 +221,20 @@
                 </fieldset>
                 <fieldset id="radios">
                     <legend> <label for="radios">Region</label> </legend>
-                    <input type="radio" name="radios" id="r1" checked> Mainland Spain <br> <!--ReqF11-->
-                    <input type="radio" name="radios" id="r2"> Spain, other regions <br>
-                    <input type="radio" name="radios" id="r3"> Europe <br>
-                    <input type="radio" name="radios" id="r4"> ROW <br>
+                    <input type="radio" value="Spain" name="radios" id="r1" checked> Spain <br> <!--ReqF11-->
+                    <input type="radio" value="Europe" name="radios" id="r2"> Europe <br>
+                    <input type="radio" value="ROW" name="radios" id="r3"> ROW <br>
+                    <label for="testLabel">Repite el texto de la selección: </label><input type="text" name="testLabel" id="testLabel"> <!--DefJS1-->
+                    <input type="button" value="Comprobar" onclick="verificar('testLabel', 'radios', 'spanCheckDefensa')"> <span id="spanCheckDefensa"></span> <!--DefJS2-->
                 </fieldset>
                 <fieldset id="checkboxes">
                     <legend> <label for="checkboxes">Band's albums bought</label> </legend>
-                    <input type="checkbox" name="checkboxes" id="c1"> Paisajes Analógicos <br> <!--ReqF12-->
-                    <input type="checkbox" name="checkboxes" id="c2" disabled title="Cannot be bought"> Sequence <br>
-                    <input type="checkbox" name="checkboxes" id="c3" disabled title="Cannot be bought"> Involution <br>
-                    <input type="checkbox" name="checkboxes" id="c4"> OMOS <br>
-                    <input type="checkbox" name="checkboxes" id="c5" disabled title="No physical editions exist"> ATMOSPHERE <br>
+                    <input type="checkbox" name="checkboxes" id="c1" onchange="checkChecks('checkboxes', 'defensaNumChecked')"> Paisajes Analógicos <br> <!--ReqF12-->
+                    <input type="checkbox" name="checkboxes" id="c2" onchange="checkChecks('checkboxes', 'defensaNumChecked')"> Sequence <br>
+                    <input type="checkbox" name="checkboxes" id="c3" onchange="checkChecks('checkboxes', 'defensaNumChecked')"> Involution <br>
+                    <input type="checkbox" name="checkboxes" id="c4" onchange="checkChecks('checkboxes', 'defensaNumChecked')"> OMOS <br>
+                    <input type="checkbox" name="checkboxes" id="c5" onchange="checkChecks('checkboxes', 'defensaNumChecked')"> ATMOSPHERE <br>
+                    <span id="defensaNumChecked">0</span> <!--DefJS3-->
                 </fieldset>
                 <fieldset id="desplegable"> <!--ReqF13-->
                     <legend> <label for="desplegable">¿What is your favourite musical genre?</label> </legend>
@@ -236,7 +251,15 @@
                 <fieldset id="colorFieldset"> <!--ReqF13-->
                     <legend> <label for="color">Color chooser</label> </legend>
                     <label for="color">Pick your favourite color: </label>
-                    <input type="color" id="color" name="color" value="#ff0000" onchange="actualizarColorTabla(this.id, 'th')"> <br> <!--ReqF13-->
+                    <input type="color" id="color" name="color" value="#ff0000" onchange="actualizarColorTabla(this.id, 'th', 'genSpan')"> <br> <!--ReqF13-->
+                </fieldset>
+                <fieldset id="fieldDefensa">
+                    <legend> <label for="fieldDefensa">Generador de títulos</label> </legend>
+                    <label for="fieldDefensaText">Texto: </label><input type="text" id="genText" placeholder="Texto aquí" oninput="genTit('genText', 'genNum', 'genDec', 'genSpan', 'color')"> <br>
+                    <label for="selectnumdefensa">Tamaño: </label> <input type="number" id="genNum" min="5" max="20" onchange="genTit('genText', 'genNum', 'genDec', 'genSpan', 'color')"> <br>
+                    <input type="checkbox" name="genDec" id="fieldDefensaCur" onchange="genTit('genText', 'genNum', 'genDec', 'genSpan', 'color')"><em>Cursiva</em>
+                    <input type="checkbox" name="genDec" id="fieldDefensaNeg" onchange="genTit('genText', 'genNum', 'genDec', 'genSpan', 'color')"><strong>Negrita</strong><br>
+                    <span id="genSpan"></span>
                 </fieldset>
                 <br>
                 <input type="button" value="Send" id="formSubmit" onclick="comprobar()">
@@ -281,7 +304,19 @@
         <hr>
         <footer id="footer"> <!--ReqH5--->
             (c) <a id="mail" href="mailto:UO283319@uniovi.es?subject=OMOS%20web%20en" target="_blank">Juan Mier</a> <!--ReqH14-->
-            <time datetime="2022-05-06">May 6th, 2022</time>, all rights reserved. 
+            <time datetime="2022-05-06">May 6th, 2022</time>, all rights reserved.  <br>
+            <table> <!--DefH2-->
+                <caption>Histórico de cambios</caption>
+                <thead>
+                    <th> Fecha de revisión </th>
+                    <th> Versión de la web </th>
+                    <th> Autor </th>
+                </thead>
+                <tbody>
+                    <tr> <td> 20/10/2019 </td> <td> 1.0 </td> <td> Juan Francisco Mier Montoto </td> </tr>
+                    <tr> <td> 20/10/2019 </td> <td> 1.1 </td> <td> Juan Francisco Mier Montoto </td> </tr>
+                </tbody>
+            </table>
         </footer>
     </body>
 </html>

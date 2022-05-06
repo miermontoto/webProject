@@ -13,17 +13,18 @@ function updateDateHint(idDate, idHint) {
     dateHint.innerHTML = dateFullFormat.format(date.valueAsDate); // ReqF18
 }
 
-function updateCálculo(idNum1, idOp, idNum2, idSpan, idResultado, idMoneda) { // ReqI12
+function updateCálculo(idNum1, idOp, idNum2, idSpan, idResultado, idMoneda, idCurrency) { // ReqI12
     var num1 = document.getElementById(idNum1);
     var num2 = document.getElementById(idNum2);
     var op = document.getElementById(idOp);
     var span = document.getElementById(idSpan);
     var moneda = document.getElementById(idMoneda);
+    var currency = document.getElementById(idCurrency);
 
     span.innerHTML = numberFormat.format(num1.valueAsNumber) + " " + op.value + " " + numberFormat.format(num2.valueAsNumber); // ReqI13
     var resultado = eval(num1.valueAsNumber + op.value + num2.valueAsNumber)
     document.getElementById(idResultado).innerHTML = numberFormat.format(resultado); // ReqI8
-    moneda.innerHTML = currencyFormat.format(resultado); // ReqI9, ReqI14
+    moneda.innerHTML = new Intl.NumberFormat(locale, {style: 'currency', currency: currency.value}).format(resultado); // ReqI9, ReqI14, DefI4
 }
 
 function calcularFecha(idFecha, idOp, idNum, idSpan, idResultado, idMod) { // ReqI12
@@ -47,5 +48,17 @@ function calcularFecha(idFecha, idOp, idNum, idSpan, idResultado, idMod) { // Re
             fechaResultado.setFullYear(eval(fechaResultado.getFullYear() + op.value + num.valueAsNumber));
             break;
     }
-    resultado.innerHTML = dateFullFormat.format(fechaResultado); // ReqI10, ReqI16
+
+    var dayOfTheWeek = fechaResultado.getDay();
+    if(dayOfTheWeek != 0 && dayOfTheWeek != 6) { // DefI2
+        resultado.innerHTML = dateFullFormat.format(fechaResultado);
+    } else {
+        resultado.innerHTML = dateShortFormat.format(fechaResultado);
+    }
+     // ReqI10, ReqI16
+}
+
+function updateVersionName(idSpan) { // DefI3
+    console.log(nombreVersion);
+    document.getElementById(idSpan).innerHTML = dateFullFormat.format(new Date()) + " - " + nombreVersion; // DefI3
 }

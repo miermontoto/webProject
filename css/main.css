@@ -3,6 +3,7 @@
 ul > li {
     list-style-image: url(../ico/favicon.ico); /*ReqC17*/
     /* Esto es horrible, pero no me queda otra opción. */
+
 }
 
 body:lang(es) { /*ReqI17*/
@@ -199,17 +200,6 @@ ol > li {
     list-style-type: lower-roman; /*ReqC16*/
 }
 
-
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-
-td {
-    text-align: center;
-    border: 1px solid black;
-}
-
 th {
     background-color: lightgray;
     border: 2px solid black;
@@ -220,6 +210,7 @@ th {
 td {
     padding: 0.5em; /*ReqC20*/
 }
+
 
 #list {
     position: float;
@@ -247,4 +238,61 @@ footer {
 footer * {
     background-color: transparent;
     color: inherit;
+}
+
+/* ----- REGLAS DE LA DEFENSA ----- */
+.errordesintaxis { /*DefC1*/
+    color: red;
+    text-decoration: underline;
+}
+
+table { /*DefC2*/
+    border: 2px solid black;
+    background-color: red;
+}
+
+td { /*DefC2*/
+    text-align: center;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+ul * { /* DefC4*/
+    padding: 0.5em;
+}
+
+ul *:hover { /*DefC4*/
+    border: 1px solid black;
+}
+
+#paisajes img { /*DefC5*/
+    position: relative;
+    left: -25em;
+    z-index: 0; /*DefC6*/
+}
+
+#grupo p {
+    z-index: 1; /*DefC6*/
+}
+
+.subseccion { /*DefC7*/
+    width: 300px;
+    position: float;
+}
+
+header + .subseccion *:first-letter {
+    font-size: 5em; /*DefC3*/
+}
+
+/*DefI1*/
+h1:lang(it) {
+    color: green;
+}
+
+h1:lang(en) {
+    color: blue;
+}
+
+h1:lang(es) {
+    color: red;
 }
