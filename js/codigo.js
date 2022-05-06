@@ -52,3 +52,11 @@ function actualizarColorTabla(idColor, idHead) {
     var tempDom = document.getElementsByName(idHead);
     for(var i = 0; i < tempDom.length; i++) tempDom[i].style.backgroundColor = document.getElementById(idColor).value;
 }
+
+function checkTel(idTel) { // ReqF19
+    var tempDom = document.getElementById(idTel);
+    var temp = tempDom.value;
+    if(temp.length == 9) {
+        tempDom.style = 'border: 1px solid green;';
+    }
+}

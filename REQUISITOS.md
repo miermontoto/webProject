@@ -10,7 +10,6 @@
 - [x] ReqH4: Encabezado.
 - [x] ReqH5: Pie de página con autor y fecha de publicación.
 - [x] ReqH6: Algún artículo por párrafos.
-  - [ ] Desarrollar artículo, ahora mismo está incompleto.
 
 ### 1.2 Características de texto
 
@@ -79,7 +78,7 @@ Un elemento a revisar.
 
 - [x] ReqC16: Las listas ordenadas tienen viñetas.
 - [x] ReqC17: Las listas no ordenadas tienen una imagen por viñeta.
-- [ ] ReqS18: Todas las listas tienen posición, sean ordenadas o no.
+- [x] ReqS18: Todas las listas tienen posición, sean ordenadas o no.
 
 ### 2.6 Tablas
 
@@ -89,8 +88,8 @@ Un elemento a revisar.
 
 ### 2.7 Posicionamiento y visualización
 
-- [ ] ReqS21: La página está dividida en bloques y tienen posición.
-- [ ] ReqS22: Existen prioridades en caso de solapamiento. (z-index)
+- [x] ReqS21: La página está dividida en bloques y tienen posición.
+- [x] ReqS22: Existen prioridades en caso de solapamiento. (z-index)
 
 ## 3. JavaScript
 
@@ -102,7 +101,6 @@ Dos elemento por revisar.
 - [x] ReqF2: El formulario no debe comprobarse antes de enviarse.
 - [x] ReqF3: No deben hacerse sugerencias mientras se esté rellenando.
 - [x] ReqF4: El resultado del formulario se muestra en una pestaña aparte.
-  - No funciona `target="_blank"`.
 - [x] ReqF5: El resultado se envía por correo.
 
 ### 3.2 Elementos del formulario
@@ -124,7 +122,7 @@ Dos elemento por revisar.
 ### 3.3 Código JS
 
 - [x] ReqF18: Se modifica el contenido de los elementos HTML en función de los datos introducidos.
-- [ ] ReqF19: Se cambia el estilo de los elementos del formulario en función de si son valores válidos o no.
+- [x] ReqF19: Se cambia el estilo de los elementos del formulario en función de si son valores válidos o no.
 - [x] ReqF20: Se indica alguna ayuda cuando se detecte (mediante js) que un campo no es válido.
 - [x] ReqJ21: Una función con varios parámetros que sea llamada con diferentes valores de los mismos.
 - [x] ReqF22: Los dos eventos de foco sobre algún elemento.

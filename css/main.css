@@ -1,3 +1,23 @@
+/* DESACTIVAR ESTAS REGLAS PARA VER LA PÁGINA WEB DE LA MANERA ORIGINAL */
+
+ul > li {
+    list-style-image: url(../ico/favicon.ico); /*ReqC17*/
+    /* Esto es horrible, pero no me queda otra opción. */
+}
+
+body:lang(es) { /*ReqI17*/
+    background-image: url(../media/carátula.png); /*ReqS15*/
+    /* De nuevo, esto es horrible, es solo una manera rápida
+    de implementar el requisito. */
+}
+
+body:lang(en) { /*ReqI17*/
+    background-image: url(../media/carátulaInv.png); /*ReqS15*/
+}
+
+/* --------------------------------------------------------------- */
+
+
 h1,h2,h3 { /* fuente de los títulos */
     font-family: 'Akshar', sans-serif;
 }
@@ -42,20 +62,12 @@ h1:lang(en) { /*ReqI17*/
 }
 
 /* -- contenido ---- */
-body { /*ReqS15*/
+body {  /*ReqS15*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-/*
-body:lang(es) {
-    background-image: url(../media/carátula.png);
-}
-
-body:lang(en) {
-    background-image: url(../media/carátulaInv.png);
-}*/
 
 figure > * {
     width: 100%;
@@ -67,12 +79,14 @@ figure {
     float: right;
     width: 12%;
     height: inherit;
-    z-index: -1;
+    z-index: -1; /*ReqS22*/
 }
 
 div {
     display: block;
     width: 100%;
+    position: float; /*ReqS21*/
+    float: left;
 }
 
 .sepDiv {
@@ -81,7 +95,7 @@ div {
 
 .IMPORTANTE { /*ReqC1*/
     text-align: center; /*ReqC7*/
-    /*color: red;*/
+    color: red;
 }
 
 p.IMPORTANTE {
@@ -116,6 +130,10 @@ a:hover {
     color: yellow; /*ReqC11*/
 }   
 
+ol, ul {
+    position: relative; /*ReqS18*/
+}
+
 li:first-of-type li:last-of-type { /*ReqC12*/
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
@@ -139,6 +157,14 @@ article:first-letter { /*ReqC13*/
     border-right: 0.1em;
 }
 
+.leftFloat {
+    float: left;
+}
+
+.rightFloat {
+    float: right;
+}
+
 p strong {
     text-decoration: underline; /*ReqS9*/
 }
@@ -150,6 +176,7 @@ p {
     /*ReqC8*/
     padding: 0.5em;
     width: 80%;
+    z-index: 0; /*ReqS22*/  
 }
 
 figcaption {
@@ -172,9 +199,6 @@ ol > li {
     list-style-type: lower-roman; /*ReqC16*/
 }
 
-ul > li {
-    /*list-style-image: url(../ico/favicon.ico);*/ /*ReqC17*/
-}
 
 table {
     border: 2px solid black;
