@@ -56,7 +56,6 @@ function actualizarColorTabla(idColor, idHead) {
 function checkTel(idTel) { // ReqF19
     var tempDom = document.getElementById(idTel);
     var temp = tempDom.value;
-    if(temp.length == 9) {
-        tempDom.style = 'border: 1px solid green;';
-    }
+    if(temp.length == 9) tempDom.style = 'border: 1px solid green;';
+    else tempDom.style = 'border: 0px;';
 }
